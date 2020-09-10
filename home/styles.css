@@ -1,9 +1,22 @@
-.columnas{
-    display: grid;
-    grid-template-columns: 1fr 1fr 
-    padding: 16px;
-}
 
 body{
     background: black;
+}
+
+.peli{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.serie{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    padding: 0%;
 }
