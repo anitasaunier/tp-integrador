@@ -3,3 +3,7 @@
     grid-template-columns: 1fr 1fr 
     padding: 16px;
 }
+
+body{
+    background: black;
+}
