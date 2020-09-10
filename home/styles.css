@@ -2,7 +2,9 @@
 body{
     background: black;
 }
+header{color: whitesmoke;
 
+}
 .peli{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -19,4 +21,10 @@ body{
     display: flex;
     justify-content: flex-start;
     padding: 0%;
+}
+ol{text-decoration: double;
+    color:whitesmoke;
+}
+h2.menu{text-decoration: double;
+    color: whitesmoke
 }
