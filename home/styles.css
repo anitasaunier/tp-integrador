@@ -8,6 +8,7 @@ nav{display: flex;
     flex-direction: row;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     align-items: center;
+    
 }
 h2.menu{text-decoration: double;
     color: whitesmoke;
@@ -33,6 +34,7 @@ ul{    color:whitesmoke;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+
 }
 
 .serie{
