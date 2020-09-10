@@ -1,10 +1,34 @@
-
+/* general */
 body{
     background: black;
 }
-header{color: whitesmoke;
-
+/* navegador */
+nav{display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    align-items: center;
 }
+h2.menu{text-decoration: double;
+    color: whitesmoke;
+    font-size: 36px; 
+}
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    padding: 0%;
+    margin-left: 220px;
+}
+li{margin-left: 20px;
+font-size: 23px;}
+ul{    color:whitesmoke;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    padding: 0%;
+}
+/* contenido */
 .peli{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -16,15 +40,10 @@ header{color: whitesmoke;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 }
-
-.logo{
-    display: flex;
-    justify-content: flex-start;
-    padding: 0%;
-}
-ol{text-decoration: double;
-    color:whitesmoke;
-}
-h2.menu{text-decoration: double;
-    color: whitesmoke
+/* otros */
+header{color: whitesmoke;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display:flex;
+    justify-content: center;
+    font-size: 30px;
 }
