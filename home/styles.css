@@ -43,6 +43,8 @@ ul{    color:whitesmoke;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 20px;
+    border-bottom: solid 3px tomato;
+    
 
 }
 
@@ -50,6 +52,7 @@ ul{    color:whitesmoke;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 20px;
+    border-bottom: solid 3px tomato;
 }
 
 /* otros */
@@ -72,11 +75,4 @@ header{color: whitesmoke;
        width: 80%;
        display: block;
        margin: auto;
-   } 
-
-
-
-     
-h1{
-    background-color: aliceblue;
-}
+   }
