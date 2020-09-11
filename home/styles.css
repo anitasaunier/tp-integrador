@@ -57,8 +57,12 @@ header{color: whitesmoke;
 .img-pelicula{
     width: 100%;
 }
-     
-    
+   .banner{
+       width: 100%;
+   }  
+   .img-banner{
+       width: 100%;
+   } 
 
 
 
