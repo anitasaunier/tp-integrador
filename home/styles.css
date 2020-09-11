@@ -20,6 +20,7 @@ h2.menu{text-decoration: double;
     justify-content: flex-start;
     padding: 0%;
     margin-left: 220px;
+    margin-bottom: 20px;
 }
 li{margin-left: 20px;
 font-size: 23px;}
