@@ -28,13 +28,17 @@ li{
     font-size: 23px;
 }
 
-ul{    
-    color:whitesmoke;
+ul{ 
     align-items: center;
     display: flex;
     flex-direction: row;
     justify-content:space-around;
     padding: 0%;
+}
+
+a{
+    color: seashell;
+    text-decoration: none;
 }
 
 .detalle{
