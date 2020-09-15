@@ -2,15 +2,16 @@ body{
     background: black;
 }
 
-nav{display: flex;
+nav{
+    display: flex;
     justify-content: space-between;
     flex-direction: row;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     align-items: center;
-
 }
 
-h2.menu{text-decoration: double;
+h2.menu{
+    text-decoration: double;
     color: whitesmoke;
     font-size: 36px; 
 }
@@ -22,10 +23,13 @@ h2.menu{text-decoration: double;
     margin-left: 220px;
     margin-bottom: 20px;
 }
-li{margin-left: 20px;
-font-size: 23px;}
+li{
+    margin-left: 20px;
+    font-size: 23px;
+}
 
-ul{    color:whitesmoke;
+ul{    
+    color:whitesmoke;
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -33,15 +37,26 @@ ul{    color:whitesmoke;
     padding: 0%;
 }
 
+.detalle{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
 h1{
-    color: white;
+    color: red;
+    font-family: fantasy;
 }
 
 p{
     color: white;
+    text-align: left;
+    padding: 2%;
+    font-size: 16px;
+    font-family: cursive;
 }
-h2{
+.info{
     color: white;
-    font-size: 20px;
+    font-size: 10px;
+    font-family: cursive;
 }
 
