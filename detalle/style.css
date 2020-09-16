@@ -10,10 +10,10 @@ nav{
     align-items: center;
 }
 
-h2.menu{
+.menu{
     text-decoration: double;
     color: whitesmoke;
-    font-size: 36px; 
+    font-size: 30px; 
 }
 
 .logo{
@@ -64,3 +64,6 @@ p{
     font-family: cursive;
 }
 
+.img{
+    padding: 5%;
+}

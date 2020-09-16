@@ -15,9 +15,9 @@ nav{display: flex;
 
 }
 
-h2.menu{text-decoration: double;
+.menu{text-decoration: double;
     color: whitesmoke;
-    font-size: 36px; 
+    font-size: 30px; 
 }
 
 .logo{
@@ -37,6 +37,11 @@ ul{    color:whitesmoke;
     justify-content:space-around;
     padding: 0%;
 }
+
+a{
+    color: seashell;
+    text-decoration: none;  
+}
 /* contenido */
 
 .peli{
@@ -44,8 +49,10 @@ ul{    color:whitesmoke;
     grid-template-columns: repeat(6, 1fr);
     gap: 20px;
     border-bottom: solid 3px tomato;
-    
+}
 
+.pelicula{
+    border: 2px solid gray;
 }
 
 .series{
@@ -53,8 +60,11 @@ ul{    color:whitesmoke;
     grid-template-columns: repeat(6, 1fr);
     gap: 20px;
     border-bottom: solid 3px tomato;
-}
+    }
 
+.serie{
+    border: 2px solid gray;
+}
 /* otros */
 
 header{color: whitesmoke;
