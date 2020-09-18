@@ -1,6 +1,4 @@
-
-    /* general */
-
+/* General */
 body{
     background: black;
 }
@@ -41,7 +39,8 @@ nav{display: flex;
     margin-bottom: 20px;
 }
 li{margin-left: 20px;
-font-size: 23px;}
+font-size: 23px;
+color: white;}
 
 ul{    color:whitesmoke;
     align-items: center;
@@ -78,7 +77,38 @@ a{
 .serie{
     border: 2px solid gray;
 }
-/* otros */
+.generos{display: flex;
+    justify-content: space-around;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    color: whitesmoke;
+    align-items: center;  
+}
+.distintos{display: flex;
+    align-items: center;  
+    justify-content: center;
+    background-color: turquoise;
+    width: 121px;
+    height: 163px;
+}
+/* Footer */
+footer{color: whitesmoke;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 30px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+justify-items: center;
+}
+.farticulos{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+    display: grid;
+    border:1px solid rgb(168, 39, 39);
+    
+}
+/* OTROS */
 
 header{color: whitesmoke;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -99,3 +129,27 @@ header{color: whitesmoke;
        display: block;
        margin: auto;
    }
+   /* agregado de detail */
+.detalle{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+h1{
+    color: red;
+    font-family: fantasy;
+}
+p{
+    color: white;
+    text-align: left;
+    padding: 2%;
+    font-size: 16px;
+    font-family: cursive;
+}
+.info{
+    color: white;
+    font-size: 10px;
+    font-family: cursive;
+}
+.imgdetail{
+    padding: 5%
+}
