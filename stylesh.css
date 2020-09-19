@@ -54,15 +54,13 @@ a{
     text-decoration: none;  
 }
 
+
 /* contenido */
 
 .peli{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    border-bottom: outset 3px greenyellow;
-    border-right: outset 3px greenyellow;
-    border-left: outset 3px greenyellow;
 }
 
 .pelicula{
@@ -73,9 +71,6 @@ a{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    border-bottom: outset 3px greenyellow;
-    border-right: outset 3px greenyellow;
-    border-left: outset 3px greenyellow;
     }
 
 .serie{
@@ -91,7 +86,7 @@ a{
 .distintos{display: flex;
     align-items: center;  
     justify-content: center;
-    background-color: turquoise;
+    color: white;
     width: 121px;
     height: 163px;
 }
@@ -121,7 +116,15 @@ header{color: whitesmoke;
     justify-content: center;
     font-size: 30px;
 }
-.titulo{border-bottom: double 3px greenyellow;
+
+.gen{color: whitesmoke;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display:flex;
+    justify-content: left;
+    font-size: 30px;
+
+}
+.titulo{border-bottom: double 3px crimson;
     
 }
 .img-serie{
@@ -142,14 +145,14 @@ header{color: whitesmoke;
     grid-template-columns: 1fr 2fr;
 }
 h1{
-    color: red;
+    color: lightyellow;
     font-family: fantasy;
 }
 p{
     color: white;
     text-align: left;
     padding: 2%;
-    font-size: 16px;
+    font-size: 20px;
     font-family: cursive;
 }
 .info{
