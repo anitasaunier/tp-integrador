@@ -219,3 +219,28 @@ p{
     border-left: outset 3px greenyellow;
    }
 }
+
+
+.generoterror{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+.terror{
+    border: 2px solid gray;
+}
+.generocomedia{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    }
+    .comedia{
+        border: 2px solid gray;
+    }
+    .img-terror{
+        width: 100%;
+    }    
+    .img-comedia{
+        width: 100%;
+    }
+    
