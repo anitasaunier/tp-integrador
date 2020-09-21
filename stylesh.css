@@ -38,11 +38,11 @@ nav{display: flex;
     margin-left: 220px;
     margin-bottom: 20px;
 }
-li{margin-left: 20px;
+.nave{margin-left: 20px;
 font-size: 23px;
 color: white;}
 
-ul{    color:whitesmoke;
+.navbox{    color:whitesmoke;
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -56,26 +56,11 @@ a{
 
 
 /* contenido */
-
-.peli{
-    display: grid;
+.contenidos{display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
-
-.pelicula{
-    border: 2px solid gray;
-}
-
-.series{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    }
-
-.serie{
-    border: 2px solid gray;
-}
+.img-contenido{border:2px solid gray}
 .generos{display: flex;
     justify-content: space-around;
     grid-template-columns: repeat(6, 1fr);
@@ -93,20 +78,18 @@ a{
 /* Footer */
 footer{color: whitesmoke;
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-font-size: 30px;
+font-size: 20px;
 display: flex;
 flex-direction: row;
 justify-content: space-between;
 justify-items: center;
-margin-top: 40px;
+margin-top: 20px;
 }
-.farticulos{
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 30px;
-    display: grid;
-    border:1px solid rgb(168, 39, 39);
-    
+.footerizquierda{display: flex;
+    flex-direction: row;    
+}
+.listasfinal{display: flex;
+    flex-direction: column;
 }
 /* OTROS */
 
@@ -124,16 +107,9 @@ header{color: whitesmoke;
     font-size: 30px;
 
 }
-.titulo{border-bottom: double 3px grey;
-    
+.titulo{border-bottom: double 3px grey;   
 }
-.img-serie{
-    width: 100%;
-}    
-.img-pelicula{
-    width: 100%;
-}
-
+.img-ambos{width: 100%;}
 .img-banner{
        width: 80%;
        display: block;
@@ -148,39 +124,33 @@ h1{
     color: lightyellow;
     border-bottom: double 3px grey;
 }
-p{
+
+
+
+.info{display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: left;
+    padding: 2%;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+.imgdetail{
+    padding: 5%
+}
+.listasdetail{display: flex;
+    flex-direction: column;
     color: white;
     text-align: left;
     padding: 2%;
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
 }
-.parrafo{
-  color: white;
-  font-size: 10px;
-  font-family: 'Courier New', Courier, monospace;
-}
-
-.info{
-    color: white;
-    font-size: 10px;
-    font-family: 'Courier New', Courier, monospace;
-}
-.imgdetail{
-    padding: 5%
-}
 /* Responsive design */
 
 @media(min-width:320px){
-.series{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    border-bottom: solid 3px rgb(255, 253, 253);
-    border-right: solid 3px rgb(255, 253, 253);
-    border-left: solid 3px rgb(255, 253, 253);
-    }
-.peli{
+.contenidos{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -190,15 +160,7 @@ p{
     }
 }
 @media(min-width:768px){
-.series{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    border-bottom: solid 3px rgb(255, 253, 253);
-    border-right: solid 3px rgb(255, 253, 253);
-    border-left: solid 3px rgb(255, 253, 253);
-    }
-.peli{
+.contenidos{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -208,15 +170,7 @@ p{
     }
 }
 @media(min-width:1028px){
-.series{
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 20px;
-    border-bottom: solid 3px rgb(255, 253, 253);
-    border-right: solid 3px rgb(255, 253, 253);
-    border-left: solid 3px rgb(255, 253, 253);
-   }
-.peli{
+.contenidos{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 20px;
@@ -225,30 +179,7 @@ p{
     border-left: solid 3px rgb(255, 253, 253);
    }
 }
-
-
-.generoterror{
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 20px;
-}
-.terror{
-    border: 2px solid gray;
-}
-.generocomedia{
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 20px;
-    }
-    .comedia{
-        border: 2px solid gray;
-    }
-    .img-terror{
-        width: 100%;
-    }    
-    .img-comedia{
-        width: 100%;
-    }
+ /* Mas de detail*/
     .titulossimilares{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
