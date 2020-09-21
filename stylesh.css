@@ -120,11 +120,11 @@ header{color: whitesmoke;
 .gen{color: whitesmoke;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display:flex;
-    justify-content: left;
+    justify-content:left;
     font-size: 30px;
 
 }
-.titulo{border-bottom: double 3px crimson;
+.titulo{border-bottom: double 3px grey;
     
 }
 .img-serie{
@@ -146,7 +146,7 @@ header{color: whitesmoke;
 }
 h1{
     color: lightyellow;
-    font-family: fantasy;
+    font-family: ;
 }
 p{
     color: white;
