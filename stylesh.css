@@ -146,19 +146,25 @@ header{color: whitesmoke;
 }
 h1{
     color: lightyellow;
-    font-family: ;
+    font-family: Arial, Helvetica, sans-serif;
 }
 p{
     color: white;
     text-align: left;
     padding: 2%;
     font-size: 20px;
-    font-family: cursive;
+    font-family: 'Courier New', Courier, monospace;
 }
+.parrafo{
+  color: white;
+  font-size: 10px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
 .info{
     color: white;
     font-size: 10px;
-    font-family: cursive;
+    font-family: 'Courier New', Courier, monospace;
 }
 .imgdetail{
     padding: 5%
@@ -170,17 +176,17 @@ p{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    border-bottom: outset 3px greenyellow;
-    border-right: outset 3px greenyellow;
-    border-left: outset 3px greenyellow;
+    border-bottom: solid 3px rgb(255, 253, 253);
+    border-right: solid 3px rgb(255, 253, 253);
+    border-left: solid 3px rgb(255, 253, 253);
     }
 .peli{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    border-bottom: outset 3px greenyellow;
-    border-right: outset 3px greenyellow;
-    border-left: outset 3px greenyellow;
+    border-bottom: solid 3px rgb(255, 253, 253);
+    border-right: solid 3px rgb(255, 253, 253);
+    border-left: solid 3px rgb(255, 253, 253);
     }
 }
 @media(min-width:768px){
@@ -188,17 +194,17 @@ p{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    border-bottom: outset 3px greenyellow;
-    border-right: outset 3px greenyellow;
-    border-left: outset 3px greenyellow;
+    border-bottom: solid 3px rgb(255, 253, 253);
+    border-right: solid 3px rgb(255, 253, 253);
+    border-left: solid 3px rgb(255, 253, 253);
     }
 .peli{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    border-bottom: outset 3px greenyellow;
-    border-right: outset 3px greenyellow;
-    border-left: outset 3px greenyellow;
+    border-bottom: solid 3px rgb(255, 253, 253);
+    border-right: solid 3px rgb(255, 253, 253);
+    border-left: solid 3px rgb(255, 253, 253);
     }
 }
 @media(min-width:1028px){
@@ -206,17 +212,17 @@ p{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 20px;
-    border-bottom: outset 3px greenyellow;
-    border-right: outset 3px greenyellow;
-    border-left: outset 3px greenyellow;
+    border-bottom: solid 3px rgb(255, 253, 253);
+    border-right: solid 3px rgb(255, 253, 253);
+    border-left: solid 3px rgb(255, 253, 253);
    }
 .peli{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 20px;
-    border-bottom: outset 3px greenyellow;
-    border-right: outset 3px greenyellow;
-    border-left: outset 3px greenyellow;
+    border-bottom: solid 3px rgb(255, 253, 253);
+    border-right: solid 3px rgb(255, 253, 253);
+    border-left: solid 3px rgb(255, 253, 253);
    }
 }
 
@@ -243,4 +249,15 @@ p{
     .img-comedia{
         width: 100%;
     }
-    
+    .titulossimilares{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        }
+        .similar{
+            border: 2px solid gray;
+             }    
+             .img-similar{
+                 width: 100%;
+             }
+            
