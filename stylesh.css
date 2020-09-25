@@ -1,3 +1,48 @@
+.mobile-container {
+    width: 100%;
+    color: white;
+    border-radius: 10px;
+  }
+  
+  .topnav {
+    
+    position: relative;
+    width: 100%;
+    
+  }
+  
+  .topnav #myLinks {
+    display: none;
+    background-color:black;
+    width: 100%;
+  }
+  
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .active {
+    background-color: #4CAF50;
+    color: white;
+    
+  }
 /* General */
 body{
     background: black;
@@ -15,14 +60,13 @@ body{
     margin: 6px 0;
     transition: 0.4s;
 }
-
-/* Navegador */
-nav{display: flex;
+header{display: flex;
     justify-content: space-between;
     flex-direction: row;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    align-items: center;
-}
+    background-color: #4CAF50;}
+/* Navegador */
+
 .menu{
     color: whitesmoke;
     font-size: 30px; 
@@ -30,8 +74,7 @@ nav{display: flex;
 .logo{display: flex;
     justify-content: flex-start;
     padding: 0%;
-    margin-left: 220px;
-    margin-bottom: 20px;
+
 }
 .navbox{display: flex;
     align-items: center;
@@ -77,18 +120,17 @@ margin-top: 20px;
 }
 
 /* Header*/
-header{display:flex;
+
+.separadores{display:flex;
     color: whitesmoke;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     justify-content: center;
-    font-size: 30px;
-    
-}
-
+    font-size: 30px; }
 /* OTROS */
 .titulo{
     border-bottom: double 3px grey;
-    color:whitesmoke;   
+    color:whitesmoke; 
+     
 }
 .img-ambos{
     width: 100%;
@@ -143,6 +185,17 @@ header{display:flex;
     border-right: solid 3px rgb(255, 253, 253);
     border-left: solid 3px rgb(255, 253, 253);
     }
+    .active{display: none!important;}
+#myLinks{
+    display:flex!important;
+    justify-content: space-around!important;
+    align-items: center;
+    height: 100%;
+}
+.topnav{
+    height: 100%;
+}
+.icon{display:none!important;}
 }
 @media(min-width:1028px){
 .contenidos{
@@ -153,4 +206,15 @@ header{display:flex;
     border-right: solid 3px rgb(255, 253, 253);
     border-left: solid 3px rgb(255, 253, 253);
    }
+.active{display: none!important;}
+#myLinks{
+    display:flex!important;
+    justify-content: space-around!important;
+    align-items: center;
+    height: 100%;
+}
+.topnav{
+    height: 100%;
+}
+.icon{display:none!important;}
 }     
