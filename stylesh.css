@@ -4,16 +4,13 @@
     border-radius: 10px;
   }
   
-  .topnav {
-    
+  .topnav {  
     position: relative;
-    width: 100%;
-    
+    width: 100%;    
   }
-  
-  .topnav #myLinks {
-    display: none;
-    background-color:black;
+
+  .topnav #myLinks {background-color:#4CAF50;
+    display: none;    
     width: 100%;
   }
   
@@ -26,7 +23,7 @@
   }
   
   .topnav a.icon {
-    background: black;
+    height: 100%;
     display: block;
     position: absolute;
     right: 0;
