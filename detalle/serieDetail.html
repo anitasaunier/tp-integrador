@@ -5,27 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Serie.Detail</title>
     <link rel="stylesheet" href="../stylesh.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-
-<nav>
-    <div class="contenedor">
-        <div><a href="../home/index.html">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div></a>
+<header>
+<!-- Simulate a smartphone / tablet -->
+<div class="mobile-container">
+        
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+            <a href="../home/index.html" class="active">Menu</a>
+        <div id="myLinks">
+            <a href="">Idioma</a>
+            <a href="">Inicia sesion</a>
+            <a href="">Registrate</a>
+            <a href="../home/index.html">Home</a>
+            <a href="../generos/genres.html">Generos</a>
         </div>
-        <a href="../home/index.html"><h2 class="menu">MENU</h2></a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+            </a>
     </div>
-    <img  class="logo" width="200px" src="img/LogoSample_ByTailorBrands (2).jpg" alt="Logo">
-        <ul type="none" class="navbox">
-            <li class="nave"><a href="">Idioma</a></li>
-            <li class="nave"><a href="">Inicia sesion</a></li>
-            <li class="nave"><a href="">Registrate</a></li>
-            <li class="nave"><a href="../generos/genres.html">Generos</a></li>
-            <li class="nave"><a href="../home/index.html">Home</a></li>
-        </ul>
-</nav>
+</div>
+    <img  class="logo" width="200px" height="100%" src="img/LogoSample_ByTailorBrands (2).jpg" alt="Logo">
+    <script>
+        function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+        x.style.display = "none";
+        } else {
+        x.style.display = "block";
+        x.style.position = "absolute";
+        }
+    }
+    </script>  
+</header>
 
 <h1 class="titulo">DARK</h1>
 
