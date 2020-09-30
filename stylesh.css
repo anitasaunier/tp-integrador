@@ -98,13 +98,20 @@ a{
     border:2px solid gray
 }
 /* Botones */
-.view{margin-top: 3px;
-    padding:10px 23px;
-    background:white;
-    border: 1px solid black;
+.view{
+    padding:15px 32px;
+    background-color: white;
+    border: 2px solid black;
     border-radius: 4px;
     color:#000;
-}
+    font-size:12px ;
+    }
+ .botones{
+    margin-top: 10px;
+
+    }
+    
+
 /* Footer */
 footer{color: white;}
 
