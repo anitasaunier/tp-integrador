@@ -1,4 +1,4 @@
-/* Top navegation menu */
+/* Menu */
 .mobile-container {
     width: 100%;
     color: white;
@@ -57,7 +57,7 @@ header{display: flex;
     background-color: #4CAF50;
    }
 
-/* Contenido de los 4 html */
+/* Contenido de las imagenes de los 4 html */
 .contenidos{display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -74,17 +74,13 @@ header{display: flex;
     background-color: white;
     border: 2px solid black;
     border-radius: 4px;
-    color:#000;
-    
+    color:#000;    
     }
- .botones{
+.botones{
     margin-top: 30px;
-
     }
     
 
-/* Footer */
-footer{color: white;}
 
 /* Titulo como separadores*/
 
@@ -92,11 +88,11 @@ footer{color: white;}
     color: whitesmoke;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     justify-content: center;
-    font-size: 30px; }
-    .titulo{
-        border-bottom: double 3px grey;
-        color:whitesmoke; 
-        
+    font-size: 30px; 
+}
+.titulo{
+    border-bottom: double 3px grey;
+    color:whitesmoke;         
     }
 /* OTROS */
 
@@ -128,14 +124,7 @@ footer{color: white;}
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace; 
 }
-.listasdetail{display: flex;
-    flex-direction: column;
-    color: white;
-    text-align: left;
-    padding: 2%;
-    font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
-}
+
 /* footer */
 footer{display: flex;
     flex-direction: column;
