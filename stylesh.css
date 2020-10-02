@@ -145,7 +145,7 @@ color: white;}
 
 
 /* Responsive design */
-@media(min-width:320px){
+@media(min-width:420px){
 .contenidos{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -169,7 +169,7 @@ color: white;}
 }
 .icon{display:none!important;}
 }
-@media(min-width:1028px){
+@media(min-width:1024px){
 .contenidos{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
