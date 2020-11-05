@@ -101,7 +101,7 @@ header{display: flex;
     border-radius: 10px;
     border:none;
     color: white;
-    height: 35px;
+    height: 45px;
 }
 .buscador form button{
     color: white;
@@ -109,7 +109,7 @@ header{display: flex;
     padding: 10px;
     border-radius: 10px;
     border:none;
-    height: 35px;
+    height: 45px;
 }
 
 /* Botones */
