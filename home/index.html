@@ -6,6 +6,15 @@
     <title>Movietime</title>
     <link rel="stylesheet" href="../stylesh.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.4.6/dist/css/uikit.min.css">
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.6/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.6/dist/js/uikit-icons.min.js"></script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
 <header>
@@ -41,24 +50,63 @@
     </script>  
 </header>
 
+<div class="buscador">
+    <form action="##" method="GET">
+        <input type="search"  name="search" placeholder="Search">
+        <button type="submit"><i class="fas fa-search"></i></button>
+    </form>
+</div>
+
 <main class="banner">
     <img class="img-banner" height="100%" src="img/banner-ver-peliculas-cine-linea-casa-ilustracion-vectorial-movil-concepto-estilo-plano-diseno-tira-pelicula_94753-2.jpg" alt="banner" >  
 </main>
 
+    <!-- carrousel -->
 
-<div class="separadores"><h2 class="titulo">Peliculas</h2></div>
-    <section class="contenidos">
+<div class="separadores" ><h2 class="titulo">Peliculas</h2></div>
+<div class=" uk-position-relative uk-visible-toggle uk-light" tabindex="-1"  uk-slideshow>
+    <ul class="lista ">
+        <li class="item" >
+            <a href="../detalle/movieDetail.html"><img class="img-ambos" src="img/elhoyo.jpeg" alt="elhoyo"></a>
+        </li>
+        <li class="item" >
+           <a href="../detalle/movieDetail.html"><img class="img-ambos"  src="img/elhater.jpeg" alt="elhater"></a>
+        </li>
+        <li class="item" >
+            <a href="../detalle/movieDetail.html"><img class="img-ambos" src="img/lineamortal.jpeg" alt="lineamortal"></a>
+        </li>
+        <li class="item" >
+            <a href="../detalle/movieDetail.html"><img class="img-ambos" src="img/bellezainesperada.jpeg" alt="bellezainesperada"></a>
+        </li>
+        <li class="item" >
+            <a href="../detalle/movieDetail.html"><img class="img-ambos" src="img/parasite.jpeg" alt="parasite"></a>
+        </li>
+        <li class="item" >
+            <a href="../detalle/movieDetail.html"><img class="img-ambos" src="img/lalaland.jpeg" alt="lalaland"></a>
+        </li>
+    </ul>
+    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
 
-        <div class="img-contenido">
+</div>
+   
+    <!-- carrousel -->
+
+
+<div class="separadores" ><h2 class="titulo">Peliculas</h2></div>
+    <section class="contenidos" >
+       
+
+        <div class="img-contenido" >
             <a href="../detalle/movieDetail.html"><img class="img-ambos" src="img/elhoyo.jpeg" alt="elhoyo"></a>
         </div>
-        <div class="img-contenido">
+        <div class="img-contenido" >
            <a href="../detalle/movieDetail.html"><img class="img-ambos"  src="img/elhater.jpeg" alt="elhater"></a>
         </div>
-        <div class="img-contenido">
+        <div class="img-contenido" >
             <a href="../detalle/movieDetail.html"><img class="img-ambos" src="img/lineamortal.jpeg" alt="lineamortal"></a>
         </div>
-        <div class="img-contenido">
+        <div class="img-contenido" >
             <a href="../detalle/movieDetail.html"><img class="img-ambos" src="img/bellezainesperada.jpeg" alt="bellezainesperada"></a>
         </div>
          <div class="img-contenido">
@@ -67,6 +115,7 @@
         <div class="img-contenido">
             <a href="../detalle/movieDetail.html"><img class="img-ambos" src="img/lalaland.jpeg" alt="lalaland"></a>
         </div>
+       
     </section>
 
 <div class="separadores"> <h2 class="titulo">Series</h2></div>  
@@ -115,27 +164,27 @@
         </div>
     </section>
 
-<footer class="footer">
-    <div class="footerizquierda">
-        <ul type=none class="listasfinal">
-            <li>Ana Saunier</li>
-            <li>Yoel Ernesto Park</li>
-            <li>Franco Murina</li>
-        </ul>
-        <ul type=none class="listasfinal">
-            <li><a href="tel:1154986375"></a>+1154986375</li>
-            <li><a href="tel:1193784329"></a>+1193784329</li>
-            <li><a href="tel:1109675341"></a>+1109675341</li>
-        </ul>
-        <ul type=none class="listasfinal">
-            <li>Movietime Corporation</li>
-            <li>Digital House: copyright agent</li>
-            <li> <a href="https://www.digitalhouse.com/ar/?gclid=EAIaIQobChMI7IqkhKH66wIVDRGRCh3gZA7MEAAYASAAEgKnBfD_BwE"> Unite a Digital House</a></li>
-        </ul>
+
     </div>
 
-    <div class="footerderecha">
-        <a href="./index.html"><img width="200px" src="img/LogoSample_ByTailorBrands (2).jpg" alt="Logo"></a>    
+
+   
+<footer class="desktop">
+    <div class="logo">
+        <a href="./index.html"> <img src="img/LogoSample_ByTailorBrands (2).jpg" class="logo-footer" alt="logo"></a>
+    </div>
+    <ul type=none class="digital">
+        <li>Movietime Corporation</li>
+        <li>Digital House: copyright agent</li>
+        <li> <a href="https://www.digitalhouse.com/ar/?gclid=EAIaIQobChMI7IqkhKH66wIVDRGRCh3gZA7MEAAYASAAEgKnBfD_BwE"> Unite a Digital House</a></li>
+    </ul>
+    <ul class="nombres">
+            <li><a href=>ana saunier</a></li>
+            <li><a href=>franco murina</a></li>
+            <li><a href=>yoel ernesto park</a></li>
+    </ul>
+    <div class="movie">
+        <img src="img/logo-movie-removebg-preview.png" class="logo-movie" alt="movie">
     </div>
 </footer>
         
