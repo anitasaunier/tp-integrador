@@ -251,12 +251,8 @@ header{display: flex;
 }
 .icon{display:none!important;}
 }
-<<<<<<< HEAD
 
-@media(min-width:1028px){
-=======
 @media(min-width:1024px){
->>>>>>> 6f0e8aeb843cd2dc90d2c5a8b7d82397bcd0a640
 .contenidos{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
