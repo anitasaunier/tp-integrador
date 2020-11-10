@@ -64,12 +64,17 @@ header{display: flex;
     border-bottom: solid 3px rgb(255, 253, 253);
     border-right: solid 3px rgb(255, 253, 253);
     border-left: solid 3px rgb(255, 253, 253);
+    
 
     
 }
 .img-contenido{
     border:2px solid gray; 
     
+    }
+.img-ambos:hover{
+    transform: scale(1.5);
+
 }
 /* carrousel */
 .lista{
@@ -153,6 +158,7 @@ header{display: flex;
 }
 .img-ambos{
     width: 100%;
+    transition: 0.4s;
 }
 /* Agregado de detail */
 .detalle{display: grid;
