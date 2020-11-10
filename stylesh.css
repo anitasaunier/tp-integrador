@@ -178,6 +178,7 @@ header{display: flex;
 
 /* footer */
 
+<<<<<<< HEAD
     .desktop{
         width: 100%;
         box-sizing: 100%;
@@ -235,6 +236,70 @@ header{display: flex;
     }
     
 
+=======
+ footer{ 
+    width: 100%;
+    box-sizing: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    padding-bottom: 15px;
+}
+.nombres li:last-child{
+    border-right: none;
+}
+.desktop .logo{
+    width: 15%;
+}
+.desktop .logo .logo-footer{
+    width: 80%;
+}
+.desktop .digital{
+    margin: 20px;
+    font-size: 25px;
+}
+.nombres {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.nombres li  {
+    margin: 5px;
+    padding: 3px 20px;
+    border-right: 2px solid white;
+    text-transform: capitalize;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;        
+}
+.nombres li a{
+    text-decoration: none;
+    color: white;
+    transition: background-color .5s;
+}
+.nombres li a:hover {
+    background-color: rgb(125, 0, 0);
+    text-transform: capitalize;
+}
+footer .movie{  
+    width: 15%;
+}
+footer .movie .logo-movie{
+    width: 45%;
+    float: right;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    margin: 10px;
+}
+>>>>>>> 50f39e2ace6dc48642de10cee9bfb7225e2340cd
 /* Responsive design */
 @media(min-width:420px){
 .contenidos{
