@@ -48,6 +48,9 @@ a{
     color: whitesmoke;
     text-decoration: none;  
 }
+
+
+
 /* Header*/
 
 header{display: flex;
@@ -60,7 +63,8 @@ header{display: flex;
 /* Contenido de las imagenes de los 4 html */
 .contenidos{display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 30px;
+   
     border-bottom: solid 3px rgb(255, 253, 253);
     border-right: solid 3px rgb(255, 253, 253);
     border-left: solid 3px rgb(255, 253, 253);
@@ -144,6 +148,9 @@ header{display: flex;
     border-bottom: double 3px grey;
     color:whitesmoke;         
     }
+
+ 
+
 /* OTROS */
 
 .titulofuturo{border-bottom: double 3px grey;
