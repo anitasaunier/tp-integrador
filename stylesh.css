@@ -248,6 +248,10 @@ footer{
     color: white;
     margin: 10px;
 }
+.social-links{
+    width: 25%;
+    
+}
 /* Registrate */
 .mainregistrate {
     max-width: 800px;
