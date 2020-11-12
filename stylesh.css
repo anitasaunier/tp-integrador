@@ -228,6 +228,9 @@ footer{
     background-color: rgb(125, 0, 0);
     text-transform: capitalize;
 }
+.logo-movie{
+    margin-right: 10px;
+}
 
 
 
@@ -385,28 +388,25 @@ main {
     
     
     /* ----- -----  Mediaqueries ----- ----- */
-    @media screen and (min-width: 1024px) {
-      .formulario section{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-        }
-    .formulario__mensaje{
-      margin-top: 53px;
-    }
-    
-    .formulario__grupo-terminos, 
-    .formulario__mensaje,
-    .formulario__grupo-btn-enviar {
-      grid-column: 1;
-    }
-    
-    .formulario__btn {
-      width: 31%;
-      margin-top: 58px;
-      }
-
-
+/*@media screen and (min-width: 1024px) { 
+.formulario section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.formulario__mensaje{
+    margin-top: 53px;
+}
+      
+.formulario__grupo-terminos, 
+.formulario__mensaje,
+.formulario__grupo-btn-enviar {
+    grid-column: 1;
+}
+.formulario__btn {
+    width: 31%;
+    margin-top: 58px;
+}*/
 
 
 
@@ -487,7 +487,7 @@ footer{color: whitesmoke;
     }
 .social-links{
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
 }
 .contenidos{
     display: grid;
