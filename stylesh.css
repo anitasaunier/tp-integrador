@@ -92,6 +92,8 @@ header{display: flex;
     margin: 10px;
    
 }
+
+
 /* buscador */
 .buscador{
     margin: 20px;
@@ -243,9 +245,6 @@ footer{
 }
 
 /* Registrate */
-
-
-
 main {
     
     width: 90%;
@@ -260,6 +259,7 @@ main {
     font-weight: 700;
     padding: 10px;
     cursor: pointer;
+    color: white;
     }
     
     .formulario__grupo-input {
@@ -389,7 +389,7 @@ main {
     
     
     /* ----- -----  Mediaqueries ----- ----- */
-/*@media screen and (min-width: 1024px) { 
+@media screen and (min-width: 1024px) { 
 .formulario section{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -502,5 +502,5 @@ footer{color: whitesmoke;
         grid-template-columns: 1fr 2fr;
     }
  
-  }
+  }  }
     
