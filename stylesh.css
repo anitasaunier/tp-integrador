@@ -90,7 +90,7 @@ header{display: flex;
 .item{
     width: 15%;
     margin: 10px;
-    border: 2px solid gray;
+   
 }
 /* buscador */
 .buscador{
@@ -167,6 +167,7 @@ header{display: flex;
     width: 100%;
     transition: 1.4s;
     z-index: 999;
+    border: 2px solid gray;
 }
 /* Agregado de detail */
 .detalle{display: grid;
@@ -408,7 +409,10 @@ main {
     margin-top: 58px;
 }*/
 
-
+.title{
+color: white;
+margin: 5px;
+}
 
 
 
@@ -499,4 +503,4 @@ footer{color: whitesmoke;
     }
  
   }
-   }
+    
