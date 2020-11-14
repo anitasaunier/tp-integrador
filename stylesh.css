@@ -113,7 +113,7 @@ header{display: flex;
     border-radius: 10px;
     border:none;
     color: white;
-    height: 60px;
+    height: 35px;
 }
 .buscador form button{
     color: white;
@@ -121,7 +121,7 @@ header{display: flex;
     padding: 10px;
     border-radius: 10px;
     border:none;
-    height: 60px;
+    height: 35px;
 }
 
 /* Botones */
@@ -249,7 +249,7 @@ footer{
 /* Registrate */
 
 main {
-    max-width: 800px;
+    
     width: 90%;
     margin: auto;
     padding: 40px;
