@@ -247,8 +247,9 @@ footer{
 }
 
 /* Registrate */
+
 main {
-    
+    max-width: 800px;
     width: 90%;
     margin: auto;
     padding: 40px;
@@ -262,6 +263,7 @@ main {
     padding: 10px;
     cursor: pointer;
     color: white;
+    
     }
     
     .formulario__grupo-input {
@@ -390,31 +392,50 @@ main {
     }
     
     
+    
     /* ----- -----  Mediaqueries ----- ----- */
-@media screen and (min-width: 1024px) { 
-.formulario section{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-.formulario__mensaje{
-    margin-top: 53px;
-}
-      
-.formulario__grupo-terminos, 
-.formulario__mensaje,
-.formulario__grupo-btn-enviar {
-    grid-column: 1;
-}
-.formulario__btn {
-    width: 31%;
-    margin-top: 58px;
-}*/
+    @media screen and (min-width: 1024px) {
+      .formulario section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        }
+    .formulario__mensaje{
+      margin-top: 53px;
+    }
+    
+    .formulario__grupo-terminos, 
+    .formulario__mensaje,
+    .formulario__grupo-btn-enviar {
+      grid-column: 1;
+    }
+    
+    .formulario__btn {
+      width: 31%;
+      margin-top: 58px;
+      }
 
-.title{
-color: white;
-margin: 5px;
-}
+      .title{
+        color: white;
+        margin: 5px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -425,6 +446,7 @@ margin: 5px;
 
 
 /* Responsive design */
+
 @media(min-width:420px){
 .contenidos{
     display: grid;
@@ -504,5 +526,5 @@ footer{color: whitesmoke;
         grid-template-columns: 1fr 2fr;
     }
  
-  }  }
-    
+  }  
+     }
