@@ -1,33 +1,21 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movietime</title>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="../stylesh.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
     <script src="js/script.js"></script>
     <script src="resultado.js"></script>
-
-
-    <!-- UIkit CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.4.6/dist/css/uikit.min.css">
-    <!-- UIkit JS -->
-    <script defer src="https://cdn.jsdelivr.net/npm/uikit@3.4.6/dist/js/uikit.min.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/uikit@3.4.6/dist/js/uikit-icons.min.js"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-    
-
-     
-
-
-
-
-
-     
-
-</head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+  
+  </head>
 <body>
 <header>
 <!-- Simulate a smartphone / tablet -->
@@ -76,91 +64,61 @@
     <!-- carrousel -->
     
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="separadores" ><h2 class="titulo">Peliculas</h2></div>
-<div class="slideshow-container " >
-    <div class="lista uk-slider-items">
-        <li class="item" >
-            <a href="../detalle/movieDetail.html"><img class="img-ambos" src="img/elhoyo.jpeg" alt="elhoyo" ></a>
-            <h2 class="title">El hoyo</h2>
-        </li>
-        <li class="item" >
-           <a href="../detalle/movieDetail.html"><img class="img-ambos"  src="img/elhater.jpeg" alt="elhater"></a>
-        </li>
-        <li class="item" >
-            <a href="../detalle/movieDetail.html"><img class="img-ambos" src="img/lineamortal.jpeg" alt="lineamortal" ></a>
-        </li>
-        <li class="item" >
-            <a href="../detalle/movieDetail.html"><img class="img-ambos" src="img/bellezainesperada.jpeg" alt="bellezainesperada" ></a>
-        </li>
-        <li class="item" >
-            <a href="../detalle/movieDetail.html"><img class="img-ambos" src="img/parasite.jpeg" alt="parasite" ></a>
-        </li>
-        <li class="item" >
-            <a href="../detalle/movieDetail.html"><img class="img-ambos" src="img/lalaland.jpeg" alt="lalaland" ></a>
-        </li>
-       
-    </ul>
-    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
-    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
-
-</div>
-   
-    <!-- carrousel -->
-
+    <h1>carrousel</h1>
+    
+    <div class="separadores"> <h2 class="titulo">peliculas</h2></div>
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="img/elhoyo.jpeg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/elhoyo.jpeg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/elhoyo.jpeg" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    
 <div class="separadores"> <h2 class="titulo">Series</h2></div>  
-<div class=" uk-position-relative uk-visible-toggle uk-light" tabindex="-1"  uk-slideshow>
-    <ul class="lista uk-slider-items">
-    <li class="item">
-        <a href="../detalle/serieDetail.html"><img class="img-ambos" src="img/dark.jpeg" alt="dark" ></a>
-     </li>
-     <li class="item">
-        <a href="../detalle/serieDetail.html"><img  class="img-ambos"src="img/orange.jpeg" alt="orange"></a>
-    </li>
-    <li class="item">
-        <a href="../detalle/serieDetail.html"><img class="img-ambos" src="img/sucesor.jpeg" alt="sucesor"></a>
-    </li>
-    <li class="item">
-        <a href="../detalle/serieDetail.html"><img class="img-ambos" src="img/ozark.jpeg" alt="ozark"></a>
-    </li>
-    <li class="item">
-        <a href="../detalle/serieDetail.html"><img  class="img-ambos"src="img/13reasons.jpeg" alt="13 reasons" ></a>
-    </li>
-    <li class="item">
-        <a href="../detalle/serieDetail.html"><img class="img-ambos" src="img/therain.jpeg" alt="therain" ></a>
-    </li>
-   </ul>
-   <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
-   <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
-   </div>
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="img/elhoyo.jpeg" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="img/elhoyo.jpeg" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="img/elhoyo.jpeg" alt="Third slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+   
 
         
     
 
 <div class="separadores"><h2 class="titulo">Populares en Movietime</h2></div>
-<div class=" uk-position-relative uk-visible-toggle uk-light" tabindex="-1"  uk-slideshow>
+
     <ul class="lista uk-slider-items">
    <li class="item">
 <a href="../detalle/movieDetail.html"><img class="img-ambos" src="img/theparamedic.jpeg" alt="theparamedic"></a>
