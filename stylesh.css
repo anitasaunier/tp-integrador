@@ -84,17 +84,20 @@ header{display: flex;
 .lista{
     box-sizing: 100%;
     width: 100%;
-    display: flex ;
+    display: grid ;
     flex-direction:row     !important;
     align-items: center  !important;
+    gap: 4px;
 
     
 }
 .item{
-    width: 200px !important;
+    width: 300px !important;
     margin: 10px;
+    
    
 }
+
 
 
 
@@ -170,7 +173,7 @@ header{display: flex;
     margin: auto;
 }
 .img-ambos{
-    width: 100%;
+    width: 400px;
     transition: 1.4s;
     z-index: 999;
     border: 2px solid gray;
