@@ -48,7 +48,7 @@ fetch('https://api.themoviedb.org/3/trending/movie/day?api_key=38012890766028607
                         })
 
     
-                        fetch('https://api.themoviedb.org/3/trending/person/day?api_key=3801289076602860794bddb717c8f4f5')
+                        fetch('https://api.themoviedb.org/3/trending/all/week?api_key=3801289076602860794bddb717c8f4f5')
                         .then(function(respuestas){    
                             return respuestas.json()
                         })
@@ -63,7 +63,7 @@ fetch('https://api.themoviedb.org/3/trending/movie/day?api_key=38012890766028607
                          
                                  
                                  <li class="item">
-                                     <a href="../detalle/serieDetail.html"> <img class="img-ambos" src="https://image.tmdb.org/t/p/w500/${info[i].profile_path}" alt="el hater">
+                                     <a href="../detalle/serieDetail.html"> <img class="img-ambos" src="https://image.tmdb.org/t/p/w500/${info[i].poster_path}" alt="el hater">
                                  </li>
                                  `
                          } 
