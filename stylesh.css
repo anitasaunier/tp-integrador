@@ -147,15 +147,22 @@ header{display: flex;
 
 /* Titulo como separadores*/
 
-.separadores{display:flex;
+.separadores{
+    display:flex;
     color: whitesmoke;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     justify-content: center;
-    font-size: 30px; 
+    font-size: 30px;
+    background-color: dimgray;
+    
+   
+    
 }
 .titulo{
     border-bottom: double 3px grey;
-    color:whitesmoke;         
+    color:whitesmoke; 
+    vertical-align: bottom;
+          
     }
 
  
@@ -176,7 +183,9 @@ header{display: flex;
     width: 400px;
     transition: 1.4s;
     z-index: 999;
-    border: 2px solid gray;
+    
+    border-radius: 7px;
+    
 
 }
 /* Agregado de detail */
