@@ -81,19 +81,42 @@ header{display: flex;
 
 }
 /* carrousel */
-.lista{
+.lista-peliculas{
     box-sizing: 100%;
     width: 100%;
-    display: grid ;
-    flex-direction:row     !important;
+    display: flex;
+    flex-direction:row     !important; 
     align-items: center  !important;
-    gap: 4px;
+    gap: 4px; 
+
+    
+}
+.lista-series{
+    box-sizing: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction:row     !important; 
+    align-items: center  !important;
+    gap: 4px; 
+
+    
+}
+
+.lista-todas{
+    box-sizing: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction:row     !important; 
+    align-items: center  !important;
+    gap: 4px; 
 
     
 }
 .item{
     width: 300px !important;
     margin: 10px;
+   
+   
     
    
 }
@@ -180,9 +203,9 @@ header{display: flex;
     margin: auto;
 }
 .img-ambos{
-    width: 400px;
+    width: 100%;
     transition: 1.4s;
-    z-index: 999;
+    
     
     border-radius: 7px;
     
