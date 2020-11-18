@@ -154,6 +154,19 @@ header{display: flex;
     height: 35px;
 }
 
+.resultados{
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    gap: 10px;
+    
+
+}
+
+.img-resultado{
+    width: 50%;
+}
+
 /* Botones */
 .view{
     padding:15px 32px;

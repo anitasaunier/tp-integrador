@@ -24,7 +24,7 @@ fetch(url)
             let resultados = document.querySelector(".resultados")
             resultados.innerHTML += `<li>
                                         <a href="serieDetail.html?id=${info[i].id}">
-                                            <img src="https://image.tmdb.org/t/p/w500${info[i].poster_path}" alt="">
+                                            <img class= "img-resultado" src="https://image.tmdb.org/t/p/w500${info[i].poster_path}" alt="">
                                          </a>
                                     </li>`}
          else if (info[i].media_type == "movie"){
@@ -32,7 +32,7 @@ fetch(url)
             let resultados = document.querySelector(".resultados")
             resultados.innerHTML += `<li>
                                         <a href="movieDetail.html?id=${info[i].id}">
-                                            <img src="https://image.tmdb.org/t/p/w500${info[i].poster_path}" alt="">
+                                            <img class="img-resultado" src="https://image.tmdb.org/t/p/w500${info[i].poster_path}" alt="">
                                         </a>
                                     </li>`
         }
