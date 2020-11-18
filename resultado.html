@@ -6,6 +6,7 @@
     <title>Document</title>
     <script src="resultado.js"></script>
     <link rel="stylesheet" href="stylesh.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
 </head>
 <body>
 <header>
@@ -16,9 +17,9 @@
     <div class="topnav">
             <a href="" class="active">Menu</a>
         <div id="myLinks">
-            <a href="../home/index.html">Home</a>
-            <a href="../generos/genres.html">Generos</a>
-            <a href="../registrate/registrate.html">Registrate</a>
+            <a href="home/index.html">Home</a>
+            <a href="generos/genres.html">Generos</a>
+            <a href="registrate/registrate.html">Registrate</a>
             <a href="">Iniciar sesion</a>
             <a href="">Idioma</a>
         </div>
@@ -42,13 +43,18 @@
 </header>
  <!-- buscador -->
 <div class="buscador">
-    <form action="#html resultados de busqueda#" method="GET">
-        <input type="search"  name="search" placeholder="Search">
+    <form action="resultado.html" method="GET">
+        <input type="search" value="" name="search" placeholder="Search">
         <button type="submit"><i class="fas fa-search"></i></button>
     </form>
 </div>
 
+<main>
+    <p>Resultados de busqueda</p>
+    <ul class="resultados">
 
+    </ul>
+</main>
 
 
 
