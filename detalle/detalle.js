@@ -17,6 +17,11 @@ fetch(url)
 .then(function(data){    
     console.log(data) ;   
    let titulo = document.querySelector('h1');
+//    if (titulo == "null"){
+//     titulo.innerHTML = "Null"
+//    }else if(titulo == true ) {
+//     titulo.innerHTML = data.title;
+//    }
    let imagen = document.querySelector('section div img');
    let descripcion = document.querySelector('.description');
    let fechaDeLanzamiento = document.querySelector('.fechadel');
@@ -26,7 +31,7 @@ fetch(url)
    let estado = document.querySelector('.estado');
    let votos = document.querySelector('.votos');
    
-
+   
    titulo.innerHTML = data.title;
    imagen.src =  `https://image.tmdb.org/t/p/w500${data.poster_path}`;
    descripcion.innerHTML = "Description: " + data.overview; 
