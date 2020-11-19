@@ -157,8 +157,9 @@ header{display: flex;
 .resultados{
    
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    margin: 5px;
     
 
 }
@@ -166,6 +167,7 @@ header{display: flex;
 .img-resultado{
     width: 50%;
     border-radius: 5px;
+    
 }
 
 /* Botones */
