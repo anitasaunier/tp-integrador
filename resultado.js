@@ -23,7 +23,7 @@ fetch(url)
             /* resultados.innerHTML += `<li>Serie: ${info[i].original_name}</li>` */
             let resultados = document.querySelector(".resultados")
             resultados.innerHTML += `<li>
-                                        <a href="serieDetail.html?id=${info[i].id}">
+                                        <a href="detalle/movieDetail.html?id=${info[i].id}">
                                             <img class= "img-resultado" src="https://image.tmdb.org/t/p/w500${info[i].poster_path}" alt="">
                                          </a>
                                     </li>`}
@@ -31,7 +31,7 @@ fetch(url)
             /* resultados.innerHTML += `<li>Pelicula: ${info[i].title}</li>` */
             let resultados = document.querySelector(".resultados")
             resultados.innerHTML += `<li>
-                                        <a href="movieDetail.html?id=${info[i].id}">
+                                        <a href="detalle/movieDetail.html?id=${info[i].id}">
                                             <img class="img-resultado" src="https://image.tmdb.org/t/p/w500${info[i].poster_path}" alt="">
                                         </a>
                                     </li>`
