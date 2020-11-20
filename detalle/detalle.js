@@ -10,6 +10,18 @@ let mediaType = queryObject.get('media_type')
 let apiKey = " 3801289076602860794bddb717c8f4f5"
 let url = `https://api.themoviedb.org/3/${mediaType}/${id}?api_key=3801289076602860794bddb717c8f4f5&language=en-US`
 
+
+
+
+
+
+
+
+
+
+
+
+
 //Para peliculas
 if (mediaType == "movie"){
     fetch(url)
@@ -82,12 +94,38 @@ if (mediaType == "movie"){
         else{  
             votos.innerText = "Vote average: " + data.vote_average;
         }
+        let storage = localStorage.getItem('favoritos')
+        console.log(storage);
+        if (storage===null){
+            localStorage.setItem('favoritos', '[]')
+        }
+        let button =document.querySelector('.favorito')
+        console.log(button);
+        button.addEventListener('click', function(){
+            
+            let storageJs =JSON.parse(storage)
+            if(!storageJs.includes(id)){
+                storageJs.push(id)
+            }else{
+                storageJs = storageJs.filter (function(movie){
+                    return movie != id
+                })
+            }
+            localStorage.setItem('favoritos',JSON.stringify(storageJs))
+            
+        })
 
-    })
+})
+
+
+
+    
         .catch(function(error){    
             console.log(error);
             })
-}
+} 
+
+
 
 // Para series de TV
 else if (mediaType == "tv"){
@@ -176,11 +214,38 @@ else if (mediaType == "tv"){
         }else{
             capitulo.innerText = "Number of seasons: " + data.number_of_seasons;
         }
-        
+      
+        let storage = localStorage.getItem('favoritos')
+        console.log(storage);
+        if (storage===null){
+            localStorage.setItem('favoritos', '[]')
+        }
+        let button =document.querySelector('.favorito')
+        console.log(button);
+        button.addEventListener('click', function(){
+            
+            let storageJs =JSON.parse(storage)
+            if(!storageJs.includes(id)){
+                storageJs.push(id)
+            }else{
+                storageJs = storageJs.filter (function(movie){
+                    return movie != id
+                })
+            } 
+            localStorage.setItem('favoritos',JSON.stringify(storageJs))
+             
+           
+     
+
+
     })
+
+
+
     // number_of_episodes: 15
     // number_of_seasons: 2
-        .catch(function(error){    
-            console.log(error);
-            })
-}
+       
+    .catch(function(error){    
+        console.log(error);
+    })
+       } ) }
