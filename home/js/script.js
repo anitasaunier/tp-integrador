@@ -13,7 +13,7 @@ fetch('https://api.themoviedb.org/3/trending/movie/day?api_key=38012890766028607
  
          
          <li class="item">
-             <a href="../detalle/movieDetail.html?id=${info[i].id}"> <img class="img-ambos" src="https://image.tmdb.org/t/p/w500/${info[i].poster_path}" alt="el hater">
+             <a href="../detalle/movieDetail.html?id=${info[i].id}&media_type=${info[i].media_type}"> <img class="img-ambos" src="https://image.tmdb.org/t/p/w500/${info[i].poster_path}" alt="el hater">
          </li>
          `
  } 
@@ -38,7 +38,7 @@ fetch('https://api.themoviedb.org/3/trending/movie/day?api_key=38012890766028607
              
                      
                      <li class="item">
-                         <a href="../detalle/movieDetail.html?id=${info[i].id}"> <img class="img-ambos" src="https://image.tmdb.org/t/p/w500/${info[i].poster_path}" alt="el hater">
+                         <a href="../detalle/movieDetail.html?id=${info[i].id}&media_type=${info[i].media_type}"> <img class="img-ambos" src="https://image.tmdb.org/t/p/w500/${info[i].poster_path}" alt="el hater">
                      </li>
                      `
              } 
@@ -63,7 +63,7 @@ fetch('https://api.themoviedb.org/3/trending/movie/day?api_key=38012890766028607
                          
                                  
                                  <li class="item">
-                                     <a href="../detalle/movieDetail.html?id=${info[i].id}"> <img class="img-ambos" src="https://image.tmdb.org/t/p/w500/${info[i].poster_path}" alt="el hater">
+                                     <a href="../detalle/movieDetail.html?id=${info[i].id}&media_type=${info[i].media_type}"> <img class="img-ambos" src="https://image.tmdb.org/t/p/w500/${info[i].poster_path}" alt="el hater">
                                  </li>
                                  `
                          } 
