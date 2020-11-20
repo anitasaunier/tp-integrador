@@ -6,12 +6,13 @@ fetch('https://api.themoviedb.org/3/discover/movie?api_key=3801289076602860794bd
 .then(function(generos1){
     console.log(generos1); 
     let info1 = generos1.results
+   
 let generosa1 = document.querySelector('.lista-action');
 console.log(generosa1)
 for(let i=0; i<info1.length; i++){
     generosa1.innerHTML +=` 
 <li class="item">
-    <a href="../detalle/movieDetail.html?id=${info1[i].id}"> <img class="img-ambos" src="https://image.tmdb.org/t/p/w500/${info1[i].poster_path}" alt="el hater">
+    <a href="../detalle/movieDetail.html?id=${info1[i].id}&media_type=movie"><img class="img-ambos" src="https://image.tmdb.org/t/p/w500/${info1[i].poster_path}" alt="el hater">
 </li>
 `   
 }
@@ -33,7 +34,7 @@ console.log(generosa2)
 for(let i=0; i<info2.length; i++){
     generosa2.innerHTML +=` 
 <li class="item">
-    <a href="../detalle/movieDetail.html?id=${info2[i].id}"> <img class="img-ambos" src="https://image.tmdb.org/t/p/w500/${info2[i].poster_path}" alt="el hater">
+    <a href="../detalle/movieDetail.html?id=${info2[i].id}&media_type=movie"> <img class="img-ambos" src="https://image.tmdb.org/t/p/w500/${info2[i].poster_path}" alt="el hater">
 </li>
 `
 }
@@ -55,7 +56,7 @@ console.log(generosa3)
 for(let i=0; i<info3.length; i++){
     generosa3.innerHTML +=` 
 <li class="item">
-    <a href="../detalle/movieDetail.html?id=${info3[i].id}"> <img class="img-ambos" src="https://image.tmdb.org/t/p/w500/${info3[i].poster_path}" alt="el hater">
+    <a href="../detalle/movieDetail.html?id=${info3[i].id}&media_type=movie"> <img class="img-ambos" src="https://image.tmdb.org/t/p/w500/${info3[i].poster_path}" alt="el hater">
 </li>
 `
 }
@@ -77,7 +78,7 @@ console.log(generosa4)
 for(let i=0; i<info4.length; i++){
     generosa4.innerHTML +=` 
 <li class="item">
-    <a href="../detalle/movieDetail.html?id=${info4[i].id}"> <img class="img-ambos" src="https://image.tmdb.org/t/p/w500/${info4[i].poster_path}" alt="el hater">
+    <a href="../detalle/movieDetail.html?id=${info4[i].id}&media_type=movie"> <img class="img-ambos" src="https://image.tmdb.org/t/p/w500/${info4[i].poster_path}" alt="el hater">
 </li>
 `
 }
@@ -99,7 +100,7 @@ console.log(generosa5)
 for(let i=0; i<info5.length; i++){
     generosa5.innerHTML +=` 
 <li class="item">
-    <a href="../detalle/movieDetail.html?id=${info5[i].id}"> <img class="img-ambos" src="https://image.tmdb.org/t/p/w500/${info5[i].poster_path}" alt="el hater">
+    <a href="../detalle/movieDetail.html?id=${info5[i].id}&media_type=movie"> <img class="img-ambos" src="https://image.tmdb.org/t/p/w500/${info5[i].poster_path}" alt="el hater">
 </li>
 `
 }
@@ -121,7 +122,7 @@ console.log(generosa6)
 for(let i=0; i<info6.length; i++){
     generosa6.innerHTML +=` 
 <li class="item">
-    <a href="../detalle/movieDetail.html?id=${info6[i].id}"> <img class="img-ambos" src="https://image.tmdb.org/t/p/w500/${info6[i].poster_path}" alt="el hater">
+    <a href="../detalle/movieDetail.html?id=${info6[i].id}&media_type=movie"> <img class="img-ambos" src="https://image.tmdb.org/t/p/w500/${info6[i].poster_path}" alt="el hater">
 </li>
 `
 }
@@ -143,7 +144,7 @@ console.log(generosa7)
 for(let i=0; i<info7.length; i++){
     generosa7.innerHTML +=` 
 <li class="item">
-    <a href="../detalle/movieDetail.html?id=${info7[i].id}"> <img class="img-ambos" src="https://image.tmdb.org/t/p/w500/${info7[i].poster_path}" alt="el hater">
+    <a href="../detalle/movieDetail.html?id=${info7[i].id}&media_type=movie"> <img class="img-ambos" src="https://image.tmdb.org/t/p/w500/${info7[i].poster_path}" alt="el hater">
 </li>
 `
 }
@@ -165,7 +166,7 @@ console.log(generosa8)
 for(let i=0; i<info8.length; i++){
     generosa8.innerHTML +=` 
 <li class="item">
-    <a href="../detalle/movieDetail.html?id=${info8[i].id}"> <img class="img-ambos" src="https://image.tmdb.org/t/p/w500/${info8[i].poster_path}" alt="el hater">
+    <a href="../detalle/movieDetail.html?id=${info8[i].id}&media_type=movie"> <img class="img-ambos" src="https://image.tmdb.org/t/p/w500/${info8[i].poster_path}" alt="el hater">
 </li>
 `
 }
@@ -187,7 +188,7 @@ console.log(generosa9)
 for(let i=0; i<info9.length; i++){
     generosa9.innerHTML +=` 
 <li class="item">
-    <a href="../detalle/movieDetail.html?id=${info9[i].id}"> <img class="img-ambos" src="https://image.tmdb.org/t/p/w500/${info9[i].poster_path}" alt="el hater">
+    <a href="../detalle/movieDetail.html?id=${info9[i].id}&media_type=movie"> <img class="img-ambos" src="https://image.tmdb.org/t/p/w500/${info9[i].poster_path}" alt="el hater">
 </li>
 `
 }
@@ -209,7 +210,7 @@ console.log(generosa10)
 for(let i=0; i<info10.length; i++){
     generosa10.innerHTML +=` 
 <li class="item">
-    <a href="../detalle/movieDetail.html?id=${info10[i].id}"> <img class="img-ambos" src="https://image.tmdb.org/t/p/w500/${info10[i].poster_path}" alt="el hater">
+    <a href="../detalle/movieDetail.html?id=${info10[i].id}&media_type=movie"> <img class="img-ambos" src="https://image.tmdb.org/t/p/w500/${info10[i].poster_path}" alt="el hater">
 </li>
 `
 }
@@ -231,7 +232,7 @@ console.log(generosa11)
 for(let i=0; i<info11.length; i++){
     generosa11.innerHTML +=` 
 <li class="item">
-    <a href="../detalle/movieDetail.html?id=${info11[i].id}"> <img class="img-ambos" src="https://image.tmdb.org/t/p/w500/${info11[i].poster_path}" alt="el hater">
+    <a href="../detalle/movieDetail.html?id=${info11[i].id}&media_type=movie"> <img class="img-ambos" src="https://image.tmdb.org/t/p/w500/${info11[i].poster_path}" alt="el hater">
 </li>
 `
 }
@@ -253,7 +254,7 @@ console.log(generosa12)
 for(let i=0; i<info12.length; i++){
     generosa12.innerHTML +=` 
 <li class="item">
-    <a href="../detalle/movieDetail.html?id=${info12[i].id}"> <img class="img-ambos" src="https://image.tmdb.org/t/p/w500/${info12[i].poster_path}" alt="el hater">
+    <a href="../detalle/movieDetail.html?id=${info12[i].id}&media_type=movie"> <img class="img-ambos" src="https://image.tmdb.org/t/p/w500/${info12[i].poster_path}" alt="el hater">
 </li>
 `
 }
@@ -275,7 +276,7 @@ console.log(generosa13)
 for(let i=0; i<info13.length; i++){
     generosa13.innerHTML +=` 
 <li class="item">
-    <a href="../detalle/movieDetail.html?id=${info13[i].id}"> <img class="img-ambos" src="https://image.tmdb.org/t/p/w500/${info13[i].poster_path}" alt="el hater">
+    <a href="../detalle/movieDetail.html?id=${info13[i].id}&media_type=movie"> <img class="img-ambos" src="https://image.tmdb.org/t/p/w500/${info13[i].poster_path}" alt="el hater">
 </li>
 `
 }
@@ -297,7 +298,7 @@ console.log(generosa14)
 for(let i=0; i<info14.length; i++){
     generosa14.innerHTML +=` 
 <li class="item">
-    <a href="../detalle/movieDetail.html?id=${info14[i].id}"> <img class="img-ambos" src="https://image.tmdb.org/t/p/w500/${info14[i].poster_path}" alt="el hater">
+    <a href="../detalle/movieDetail.html?id=${info14[i].id}&media_type=movie"> <img class="img-ambos" src="https://image.tmdb.org/t/p/w500/${info14[i].poster_path}" alt="el hater">
 </li>
 `
 }
@@ -319,7 +320,7 @@ console.log(generosa15)
 for(let i=0; i<info15.length; i++){
     generosa15.innerHTML +=` 
 <li class="item">
-    <a href="../detalle/movieDetail.html?id=${info15[i].id}"> <img class="img-ambos" src="https://image.tmdb.org/t/p/w500/${info15[i].poster_path}" alt="el hater">
+    <a href="../detalle/movieDetail.html?id=${info15[i].id}&media_type=movie"> <img class="img-ambos" src="https://image.tmdb.org/t/p/w500/${info15[i].poster_path}" alt="el hater">
 </li>
 `
 }
@@ -341,7 +342,7 @@ console.log(generosa16)
 for(let i=0; i<info16.length; i++){
     generosa16.innerHTML +=` 
 <li class="item">
-    <a href="../detalle/movieDetail.html?id=${info16[i].id}"> <img class="img-ambos" src="https://image.tmdb.org/t/p/w500/${info16[i].poster_path}" alt="el hater">
+    <a href="../detalle/movieDetail.html?id=${info16[i].id}&media_type=movie"> <img class="img-ambos" src="https://image.tmdb.org/t/p/w500/${info16[i].poster_path}" alt="el hater">
 </li>
 `
 }
@@ -363,7 +364,7 @@ console.log(generosa17)
 for(let i=0; i<info17.length; i++){
     generosa17.innerHTML +=` 
 <li class="item">
-    <a href="../detalle/movieDetail.html?id=${info17[i].id}"> <img class="img-ambos" src="https://image.tmdb.org/t/p/w500/${info17[i].poster_path}" alt="el hater">
+    <a href="../detalle/movieDetail.html?id=${info17[i].id}&media_type=movie"> <img class="img-ambos" src="https://image.tmdb.org/t/p/w500/${info17[i].poster_path}" alt="el hater">
 </li>
 `
 }
@@ -377,15 +378,15 @@ fetch('https://api.themoviedb.org/3/discover/movie?api_key=3801289076602860794bd
 .then(function(data){
     return data.json()
 })
-.then(function(generos17){
-    console.log(generos17); 
-    let info17 = generos17.results
-let generosa17 = document.querySelector('.lista-war');
-console.log(generosa17)
-for(let i=0; i<info17.length; i++){
-    generosa17.innerHTML +=` 
+.then(function(generos18){
+    console.log(generos18); 
+    let info18 = generos18.results
+let generosa18 = document.querySelector('.lista-war');
+console.log(generosa18)
+for(let i=0; i<info18.length; i++){
+    generosa18.innerHTML +=` 
 <li class="item">
-    <a href="../detalle/movieDetail.html?id=${info18[i].id}"> <img class="img-ambos" src="https://image.tmdb.org/t/p/w500/${info17[i].poster_path}" alt="el hater">
+    <a href="../detalle/movieDetail.html?id=${info18[i].id}&media_type=movie"> <img class="img-ambos" src="https://image.tmdb.org/t/p/w500/${info18[i].poster_path}" alt="el hater">
 </li>
 `
 }
@@ -399,15 +400,15 @@ fetch('https://api.themoviedb.org/3/discover/movie?api_key=3801289076602860794bd
 .then(function(data){
     return data.json()
 })
-.then(function(generos18){
-    console.log(generos18); 
-    let info18 = generos18.results
-let generosa18 = document.querySelector('.lista-western');
-console.log(generosa18)
-for(let i=0; i<info18.length; i++){
-    generosa18.innerHTML +=` 
+.then(function(generos19){
+    console.log(generos19); 
+    let info19 = generos19.results
+let generosa19 = document.querySelector('.lista-western');
+console.log(generosa19)
+for(let i=0; i<info19.length; i++){
+    generosa19.innerHTML +=` 
 <li class="item">
-    <a href="../detalle/movieDetail.html?id=${info19[i].id}"> <img class="img-ambos" src="https://image.tmdb.org/t/p/w500/${info18[i].poster_path}" alt="el hater">
+    <a href="../detalle/movieDetail.html?id=${info19[i].id}&media_type=movie"> <img class="img-ambos" src="https://image.tmdb.org/t/p/w500/${info19[i].poster_path}" alt="el hater">
 </li>
 `
 }
@@ -415,47 +416,3 @@ for(let i=0; i<info18.length; i++){
 .catch(function(error){
     console.log(error);
 })
-
-
-
-// fetch('https://api.themoviedb.org/3/genre/movie/list?api_key=3801289076602860794bddb717c8f4f5&language=en-US')
-// .then(function(respuestas){
-//     return respuestas.json()
-// })
-// .then(function(data){
-//     console.log(data);
-//     let info = data.genres
-//     // capturar nombre y id
-//     let generos = document.querySelector('.dgeneros');
-//     console.log(generos)
-//     for(let i=0; i<info.length; i++){
-//         generos.innerHTML +=`
-//         <div class="separadores"><h2 class="titulo">${info[i].name}${info[i].id}</h2></div>
-//         <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
-        
-//             <ul class=" lista-peliculas uk-slider-items ">
-//             </ul>
-//             <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-//             <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-        
-        
-//         </div>`
-
-//     }
-// })
-// .catch(function(error){
-//     console.log(error);
-// })
-
-
-
-
-// <div class="separadores"><h2 class="titulofuturo"></h2>${info[i].name}</div>
-// <section class="contenidos">
-// <article class="card-wrapper">
-//     <div class="img-contenido">
-//         <h5 class="card-title"> ${info[i].id}</h5>
-//         <a href="../detalle/movieDetail.html"><img class="img-ambos" src="img/presenciadelmal.jpeg" alt="presenciadelmal"></a>
-//     </div>
-// </article>
-// </section>

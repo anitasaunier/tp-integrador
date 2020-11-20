@@ -125,13 +125,21 @@ header{display: flex;
 
 
 /* buscador */
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .buscador{
     margin: 20px;
     width: 40%;
+    display: block;
+    margin-left: 33%;
     
 }
 .buscador form{
     display: block;
+    
     margin: 20px;
    
 
@@ -144,6 +152,7 @@ header{display: flex;
     border:none;
     color: white;
     height: 35px;
+
 }
 .buscador form button{
     color: white;
@@ -162,6 +171,10 @@ header{display: flex;
     margin: 5px;
     
 
+}
+
+.resultadosr{
+    color: whitesmoke;
 }
 
 .img-resultado{
@@ -194,13 +207,19 @@ header{display: flex;
     font-size: 30px;
     background-color: dimgray;
     
+    
+   
    
     
 }
 .titulo{
     border-bottom: double 3px grey;
     color:whitesmoke; 
-    vertical-align: bottom;
+    
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 0 0 0 !important;
           
     }
 
@@ -242,6 +261,8 @@ header{display: flex;
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace; 
 }
+
+
 
 /* footer */
 footer{ 

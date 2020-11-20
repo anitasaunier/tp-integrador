@@ -6,11 +6,91 @@ let queryObject = new URLSearchParams(queryString);//
  // capturo el dato para el endpoint de la url
  let id = queryObject.get('id');
  //console.log(id);
-let mediaType = queryObject.get('mediatype')
+let mediaType = queryObject.get('media_type')
 let apiKey = " 3801289076602860794bddb717c8f4f5"
 let url = `https://api.themoviedb.org/3/${mediaType}/${id}?api_key=3801289076602860794bddb717c8f4f5&language=en-US`
 
+//Para peliculas
 if (mediaType == "movie"){
+    fetch(url)
+    .then(function(respuestas){    
+        return respuestas.json()
+    })
+    .then(function(data){    
+        console.log(data) ;  
+
+        let titulo = document.querySelector('h1');
+        if(data.title == ""){
+            titulo.innerText = "Title: there are no results available.";
+        } else{
+            titulo.innerText = data.title;
+        }
+    
+        let imagen = document.querySelector('section div img');
+        if(data.poster_path == ""){
+            imagen.src = "Image: there are no results available.";
+        } else{
+            imagen.src =  `https://image.tmdb.org/t/p/w500${data.poster_path}`;
+        }
+
+        let descripcion = document.querySelector('.description');
+        if(data.overview == ""){
+            descripcion.innerText = "Description: there are no results available."
+        }else{
+            descripcion.innerText = "Description: " + data.overview; 
+        }
+
+        let fechaDeLanzamiento = document.querySelector('.fechadel');
+        if(data.release_date == "" ) {
+            fechaDeLanzamiento.innerText = "Date of release: there are no results available."
+        }else{
+            fechaDeLanzamiento.innerText = "Date of release: " + data.release_date;
+        } 
+
+        let estado = document.querySelector('.estado');
+        if(data.status == ""){
+            estado.innerText = "Status: there are no results available." 
+        }else{
+            estado.innerText = "Status: " + data.status;
+        }
+
+        let popularidad = document.querySelector('.polularidad');
+        if (data.popularity == ""){
+            popularidad.innerText = "Popularity: there are no resultes available."
+        }else{
+            popularidad.innerText = "Popularity: " + data.popularity;
+        }
+
+        let homePage = document.querySelector('.homep');
+        if(data.homepage == ""){
+           homePage.innerText = "Homepage: there are no results available.";
+        }else{
+            homePage.innerHTML = "Homepage: " + `<a href="${data.homepage}"> ${data.homepage} </a>`;
+        }
+
+        let lema = document.querySelector('.lema');
+        if (data.tagline == ""){
+            lema.innerText = "Tagline: there are no results available."
+        }else{
+            lema.innerText = "Tagline: " + data.tagline;
+        }
+
+        let votos = document.querySelector('.votos');
+        if (data.vote_average == ""){
+            votos.innerText = "Vote average:  there are no results available."
+        }
+        else{  
+            votos.innerText = "Vote average: " + data.vote_average;
+        }
+
+    })
+        .catch(function(error){    
+            console.log(error);
+            })
+}
+
+// Para series de TV
+else if (mediaType == "tv"){
     fetch(url)
     .then(function(respuestas){    
         return respuestas.json()
@@ -19,74 +99,88 @@ if (mediaType == "movie"){
         console.log(data) ;  
     
         let titulo = document.querySelector('h1');
+        if(data.name == ""){
+            titulo.innerText = "Title: there are no results available.";
+        } else{
+            titulo.innerText = data.name;
+        }
+    
         let imagen = document.querySelector('section div img');
-        let descripcion = document.querySelector('.description');
-        let fechaDeLanzamiento = document.querySelector('.fechadel');
-        let popularidad = document.querySelector('.polularidad');
-        let homePage = document.querySelector('.homep');
-        let lema = document.querySelector('.lema');
-        let estado = document.querySelector('.estado');
-        let votos = document.querySelector('.votos');
-   
-   
-        titulo.innerText = data.title;
-        imagen.src =  `https://image.tmdb.org/t/p/w500${data.poster_path}`;
-        descripcion.innerText = "Description: " + data.overview; 
-        popularidad.innerText = "Popularity: " + data.popularity;
+        if(data.poster_path == ""){
+            imagen.src = "Image: there are no results available.";
+        } else{
+            imagen.src =  `https://image.tmdb.org/t/p/w500${data.poster_path}`;
+        }
 
-        homePage.innerText = "Homepage: " + data.homepage;
-        fechaDeLanzamiento.innerText = "Date of release: " + data.release_date;
-        lema.innerText = "Tagline: " + data.tagline;
-        estado.innerText = "Status: " + data.status;
-        votos.innerText = "Vote average: " + data.vote_average;
-        })
+        let descripcion = document.querySelector('.description');
+        if(data.overview == ""){
+            descripcion.innerText = "Description: there are no results available."
+        }else{
+            descripcion.innerText = "Description: " + data.overview; 
+        }
+
+
+        let popularidad = document.querySelector('.polularidad');
+        if (data.popularity == ""){
+            popularidad.innerText = "Popularity: there are no resultes available."
+        }else{
+            popularidad.innerText = "Popularity: " + data.popularity;
+        }
+
+        let homePage = document.querySelector('.homep');
+        if(data.homepage == ""){
+           homePage.innerText = "Homepage: there are no results available.";
+        }else{
+            homePage.innerHTML = "Homepage: " + `<a href="${data.homepage}"> ${data.homepage} </a>`;
+        }
+
+        let fechaDeLanzamiento = document.querySelector('.fechadel');
+        if(data.release_date == "" ) {
+            fechaDeLanzamiento.innerText = "Date of release: there are no results available."
+        }else{
+            fechaDeLanzamiento.innerText = "Date of release: there are no results available.";
+        } 
+
+        let estado = document.querySelector('.estado');
+        if(data.status == ""){
+            estado.innerText = "Status: there are no results available." 
+        }else{
+            estado.innerText = "Status: " + data.status;
+        }
+
+        let lema = document.querySelector('.lema');
+        if (data.tagline == ""){
+            lema.innerText = "Tagline: there are no results available."
+        }else{
+            lema.innerText = "Tagline: " + data.tagline;
+        }
+
+        let votos = document.querySelector('.votos');
+        if (data.vote_average == ""){
+            votos.innerText = "Vote average:  there are no results available."
+        }
+        else{  
+            votos.innerText = "Vote average: " + data.vote_average;
+        }
+
+        let episodio = document.querySelector('.episodios');
+        if (data.number_of_episodes == ""){
+            episodio.innerText = "Number of episodes: there are no results available."
+        }else{
+            episodio.innerText = "Number of episodes: " + data.number_of_episodes;
+        }
+
+        let capitulo = document.querySelector('.capitulos');
+        if (data.number_of_seasons == ""){
+            capitulo.innerText = "Number of seasons: there are no results available."
+        }else{
+            capitulo.innerText = "Number of seasons: " + data.number_of_seasons;
+        }
+        
+    })
+    // number_of_episodes: 15
+    // number_of_seasons: 2
         .catch(function(error){    
             console.log(error);
             })
 }
-//    if (titulo == ""){
-//     titulo.innerHTML = "Null"
-//    }else if(titulo == true ) {
-//     titulo.innerHTML = data.title;
-//    }
-//    let imagen = document.querySelector('section div img');
-//    let descripcion = document.querySelector('.description');
-//    let fechaDeLanzamiento = document.querySelector('.fechadel');
-//    let popularidad = document.querySelector('.polularidad');
-//    let homePage = document.querySelector('.homep');
-//    let lema = document.querySelector('.lema');
-//    let estado = document.querySelector('.estado');
-//    let votos = document.querySelector('.votos');
-   
-   
-//     titulo.innerHTML = data.title;
-//    imagen.src =  `https://image.tmdb.org/t/p/w500${data.poster_path}`;
-//    descripcion.innerHTML = "Description: " + data.overview; 
-//    popularidad.innerHTML = "Popularity: " + data.popularity;
-
-//    homePage.innerHTML = "Homepage: " + data.homepage;
-//    fechaDeLanzamiento.innerHTML = "Date of release: " + data.release_date;
-//    lema.innerHTML = "Tagline: " + data.tagline;
-//    estado.innerHTML = "Status: " + data.status;
-//    votos.innerHTML = "Vote average: " + data.vote_average;
-
-
-    // .innerHTML += `  <h1 class="titulo">PARASITE</h1>
-
-    //     <section class="detalle">      
-    //         <div class="imgdetail"> 
-    //             <img src="img/parasite.jpeg" alt="Parasite" width="100%">
-    //             <div class="botones">
-    //                 <a href="#" class="view">Reproducir</a>
-    //                 <a href="#" class="view">Ver trailer</a>
-    //             </div>
-    //         </div>  `
- 
-         
-       
-         
-  
-//    })
-// .catch(function(error){    
-//              console.log(error);
-//             })
