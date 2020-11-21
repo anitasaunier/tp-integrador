@@ -7,7 +7,7 @@ let queryObject = new URLSearchParams(queryString);//
  let id = queryObject.get('id');
  //console.log(id);
 let mediaType = queryObject.get('media_type')
-let apiKey = " 3801289076602860794bddb717c8f4f5"
+let apiKey = "3801289076602860794bddb717c8f4f5"
 let url = `https://api.themoviedb.org/3/${mediaType}/${id}?api_key=3801289076602860794bddb717c8f4f5&language=en-US`
 
 
@@ -94,6 +94,7 @@ if (mediaType == "movie"){
         else{  
             votos.innerText = "Vote average: " + data.vote_average;
         }
+
         let storage = localStorage.getItem('favoritos')
         console.log(storage);
         if (storage===null){
@@ -201,6 +202,14 @@ else if (mediaType == "tv"){
             votos.innerText = "Vote average: " + data.vote_average;
         }
 
+        let genero = document.querySelector('.generos');
+        if (data.genres == ""){
+            genero.innerText = "Genders: there are no results available."
+        }else{
+            for (i=0; i<data.genres.length; i++){
+                genero.innerHTML = `Genders: <a href=""> ${data.genres[i].name} </a> `;
+        }} 
+
         let episodio = document.querySelector('.episodios');
         if (data.number_of_episodes == ""){
             episodio.innerText = "Number of episodes: there are no results available."
@@ -220,6 +229,7 @@ else if (mediaType == "tv"){
         if (storage===null){
             localStorage.setItem('favoritos', '[]')
         }
+
         let button =document.querySelector('.favorito')
         console.log(button);
         button.addEventListener('click', function(){
@@ -241,10 +251,6 @@ else if (mediaType == "tv"){
     })
 
 
-
-    // number_of_episodes: 15
-    // number_of_seasons: 2
-       
     .catch(function(error){    
         console.log(error);
     })
