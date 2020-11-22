@@ -1,26 +1,14 @@
-// ontiene la query string
+// obtiene la query string
 let queryString = location.search;
 // // la transformo en un objeto literal
-let queryObject = new URLSearchParams(queryString);//
- //console.log(queryObject);
- // capturo el dato para el endpoint de la url
- let id = queryObject.get('id');
- //console.log(id);
+let queryObject = new URLSearchParams(queryString);
+
+// capturo el dato para el endpoint de la url
+let id = queryObject.get('id');
+
 let mediaType = queryObject.get('media_type')
-let apiKey = "3801289076602860794bddb717c8f4f5"
+
 let url = `https://api.themoviedb.org/3/${mediaType}/${id}?api_key=3801289076602860794bddb717c8f4f5&language=en-US`
-
-
-
-
-
-
-
-
-
-
-
-
 
 //Para peliculas
 if (mediaType == "movie"){
@@ -95,6 +83,14 @@ if (mediaType == "movie"){
             votos.innerText = "Vote average: " + data.vote_average;
         }
 
+        let genero = document.querySelector('.generos');
+        if (data.genres == ""){
+            genero.innerText = "Genders: there are no results available."
+        }else{
+            for (i=0; i<data.genres.length; i++){
+                genero.innerHTML = `Genders: <a href="../generos/genres.html#${data.genres[i].name}"> ${data.genres[i].name} </a> `;
+        }} 
+
         let storage = localStorage.getItem('favoritos')
         console.log(storage);
         if (storage===null){
@@ -117,9 +113,6 @@ if (mediaType == "movie"){
         })
 
 })
-
-
-
     
         .catch(function(error){    
             console.log(error);
@@ -207,21 +200,21 @@ else if (mediaType == "tv"){
             genero.innerText = "Genders: there are no results available."
         }else{
             for (i=0; i<data.genres.length; i++){
-                genero.innerHTML = `Genders: <a href=""> ${data.genres[i].name} </a> `;
+                genero.innerHTML = `Genders: <a href="../generos/genres.html#${data.genres[i].name}"> ${data.genres[i].name} </a> `;
         }} 
 
-        let episodio = document.querySelector('.episodios');
+        let episodio = document.querySelector('.listasdetail');
         if (data.number_of_episodes == ""){
-            episodio.innerText = "Number of episodes: there are no results available."
+            episodio.innerHTML += `<li>Number of episodes: there are no results available.</li><br>`
         }else{
-            episodio.innerText = "Number of episodes: " + data.number_of_episodes;
+            episodio.innerHTML += `<li>Number of episodes: ${data.number_of_episodes} </li><br>`;
         }
 
-        let capitulo = document.querySelector('.capitulos');
+        let capitulo = document.querySelector('.listasdetail');
         if (data.number_of_seasons == ""){
-            capitulo.innerText = "Number of seasons: there are no results available."
+            capitulo.innerHTML += `<li>Number of episodes: there are no results available.</li><br>`
         }else{
-            capitulo.innerText = "Number of seasons: " + data.number_of_seasons;
+            capitulo.innerHTML += `<li>Number of seasons: ${data.number_of_seasons} </li><br>`;
         }
       
         let storage = localStorage.getItem('favoritos')
