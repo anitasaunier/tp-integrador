@@ -203,7 +203,17 @@ form{
     
 }
     
-
+/* favoritos */
+.fav{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    margin: 5px;
+}
+.img-fa{
+    width: 50%;
+    border-radius: 5px;
+}
 
 /* Titulo como separadores*/
 
@@ -328,17 +338,6 @@ footer{
     align-items: center;
     justify-content: space-between;    
 }
-
-/* Registrate */
-
-
-
-
-
-
-
-
-
 
 
 
