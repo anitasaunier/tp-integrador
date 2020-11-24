@@ -186,7 +186,7 @@ form{
 /* Botones */
 .view{
     padding:15px 32px;
-    background-color: gray;
+    background-color:green;
     border: 2px solid black;
     border-radius: 4px;
     color:#000;    
@@ -197,7 +197,7 @@ form{
 
 .favorito{
     padding:15px 35px;
-    background-color:gray;
+    background-color: green;
     border: 2px solid black;
     border-radius: 5px ;
     
