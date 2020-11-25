@@ -109,10 +109,10 @@ if (mediaType == "movie"){
                 })
             }
             localStorage.setItem('favoritos',JSON.stringify(storageJs))
+
             
         })
-
-})
+         })
     
         .catch(function(error){    
             console.log(error);
