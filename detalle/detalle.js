@@ -10,7 +10,7 @@ let mediaType = queryObject.get('media_type')
 
 let url = `https://api.themoviedb.org/3/${mediaType}/${id}?api_key=3801289076602860794bddb717c8f4f5&language=en-US`
 
-//Para peliculas
+
 if (mediaType == "movie"){
     fetch(url)
     .then(function(respuestas){    
@@ -88,7 +88,7 @@ if (mediaType == "movie"){
             genero.innerText = "Genders: there are no results available."
         }else{
             for (i=0; i<data.genres.length; i++){
-                genero.innerHTML = `Genders: <a href="../generos/genres.html#${data.genres[i].name}"> ${data.genres[i].name} </a> `;
+                genero.innerHTML += ` <a href="../generos/genres.html#${data.genres[i].name}"> ${data.genres[i].name}. </a> `;
         }} 
 
         let storage = localStorage.getItem('favoritos')
@@ -111,6 +111,28 @@ if (mediaType == "movie"){
             localStorage.setItem('favoritos',JSON.stringify(storageJs))
             
         })
+fetch(`https://api.themoviedb.org/3/movie/${id}/reviews?api_key=3801289076602860794bddb717c8f4f5&language=en-US&page=1`)
+.then(function(respuestas){
+    return respuestas.json()
+})
+.then(function(data){
+    console.log(data);
+    let reviews = document.querySelector('.detalle2');
+    for (let i=0; i<data.results.length; i++){ 
+    if (data.results.content == ""){
+        reviews.innerHTML += `<li>Review: there are no results available.</li><br>`
+    }else{
+        reviews.innerHTML += `<div class="info2">
+        <ul type=none class="listasdetail">
+        <li>Review from "${data.results[i].author}": ${data.results[i].content} </li><br>
+        </ul>
+        </div>`;
+    }}
+    })
+    .catch(function(error){    
+        console.log(error);
+        })
+    
 
 })
     
@@ -199,8 +221,8 @@ else if (mediaType == "tv"){
         if (data.genres == ""){
             genero.innerText = "Genders: there are no results available."
         }else{
-            for (i=0; i<data.genres.length; i++){
-                genero.innerHTML = `Genders: <a href="../generos/genres.html#${data.genres[i].name}"> ${data.genres[i].name} </a> `;
+            for (let i=0; i<data.genres.length; i++){
+                genero.innerHTML += ` <a href="../generos/genres.html#${data.genres[i].name}"> ${data.genres[i].name}. </a> `;
         }} 
 
         let episodio = document.querySelector('.listasdetail');

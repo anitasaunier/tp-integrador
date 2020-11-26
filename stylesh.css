@@ -279,6 +279,16 @@ form{
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace; 
 }
+.info2{display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    padding: 0%;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace; 
+    justify-content: left;
+
+}
 
 
 
