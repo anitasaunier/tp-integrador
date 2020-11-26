@@ -156,3 +156,10 @@ if(mediaType == "movie"){
                     console.log(error);
                 })
                  }
+                 
+            
+                 window.addEventListener ('load', function(){
+                    let spin = document.querySelector ('.loader')
+                    spin.style.display = "none"
+                })
+            

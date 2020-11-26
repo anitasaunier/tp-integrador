@@ -210,6 +210,8 @@ form{
     width: 60px;
     height: 60px;
     animation: spin 2s linear infinite;
+   margin-left: auto;
+   margin-right: auto;
     
 }
 @keyframes spin {
