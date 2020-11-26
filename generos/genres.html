@@ -21,8 +21,8 @@
                 <div id="myLinks">
                     <a href="../home/index.html">Home</a>
                     <a href="../generos/genres.html">Genders</a>
-                    <a href=>Register</a>
-                    <a href=>Log in</a>
+                    <a>Register</a>
+                    <a>Log in</a>
                     <a href="../favoritos.html">Favorites</a>
                 </div>
                     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -47,9 +47,25 @@
          <div class="buscador">
             <form action="../resultado.html" method="GET">
                 <input type="search" value="" name="search" placeholder="Search">
-                <button type="submit"><i class="fas fa-search"></i></button>
-            </form>
-        </div>
+                <button type="submit"> <i class="fas fa-search"></i></i></button>
+            
+        
+        <div class="botones">
+          <!-- Radio button -->
+          <input type="radio" name="mediaType" id="all" value="all" checked>
+          <label class="mr-2" for="all">All</label>
+          <!-- Radio button -->
+          <input type="radio" name="mediaType" id="movie" value="movie" >
+          <label class="mr-2"for="movie">Movies</label>
+          <!-- Radio button -->
+          <input type="radio" name="mediaType" id="tv" value="tv" >
+          <label class="mr-2" for="tv">Tv</label>
+          <!-- Radio button -->
+          <input type="radio" name="mediaType" id="person" value="person" >
+          <label class="mr-2" for="person">People</label>
+      </div>
+      </div>
+      </form>
         
         
         

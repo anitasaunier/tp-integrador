@@ -1,74 +1,158 @@
+
+
+//1 Obtener la queryString
 let queryString = window.location.search;
-console.log(queryString);
-let queryObject = new URLSearchParams(queryString)
-let search = queryObject.get ('search');
-console.log(search);
+
+//2 Transformarla en un obejto literal
+let queryObject = new URLSearchParams(queryString);
+
+//3 Obtener EL dato para completar el end point.
+let search = queryObject.get('search'); //Cambie segun lo que tengo en la url
+let mediaType = queryObject.get('mediaType'); //Cambie segun lo que tengo en la url
 
 
 let apiKey = "3801289076602860794bddb717c8f4f5"
-let url = `https://api.themoviedb.org/3/search/multi?api_key=3801289076602860794bddb717c8f4f5&language=en-US&query=${search}&page=1&include_adult=false`
-
-let resultados = document.querySelector('.resultados')
 
 
-fetch(url)
-.then(datos=>datos.json() )
-.then(respuesta=> {
-    let spinner = document.querySelector ('.loader')
-    spinner.getElementsByClassName.display = "none"
-    console.log (respuesta) ;
-    let results = ''
-   
-    
-  })
+if(mediaType == "movie"){
+
+    let url = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&language=en-US&query=${search}&page=1&include_adult=false` //Viene de la API de TMDB
+
+    fetch(url)
+        .then(function (respuestas) {
+            return respuestas.json()
+        })
+        .then(function (data) {
+            //Aca operamos con los datos.
+            console.log(data);
+
+            let info = data.results //Esto es un array.
+            let resultados = document.querySelector('.resultados');
+           
+
+            for (let i = 0; i < info.length; i++) {
+             
+                               resultados.innerHTML += `<li>
+                                                            <a href="detalle/movieDetail.html?id=${info[i].id}&media_type=${info[i].media_type}">
+                                                                <img class="img-resultado" src="https://image.tmdb.org/t/p/w500${info[i].poster_path}" alt="">
+                                                            </a>
+                                                        </li>`
+                            
+          }
+
+        })
+        .catch(function (error) {
+            console.log(error);
+        })    }
 
 
 
 
+        if(mediaType == "tv"){
 
+            let url = `https://api.themoviedb.org/3/search/tv?api_key=${apiKey}&language=en-US&query=${search}&page=1&include_adult=false` //Viene de la API de TMDB
+        
+            fetch(url)
+                .then(function (respuestas) {
+                    return respuestas.json()
+                })
+                .then(function (data) {
+                    //Aca operamos con los datos.
+                    console.log(data);
+        
+                    let info = data.results //Esto es un array.
+                    console.log(info)
+                    let resultados = document.querySelector('.resultados');
+                    
+                    for (let i = 0; i < info.length; i++) {
 
-
-
-
-fetch(url)
-.then(function (respuestas){
-    return respuestas.json()
-})
-.then(function(data){
-    console.log(data);
-    let info = data.results;
-    if (info.length != 0){ 
-    for (let i=0; i<info.length; i++){
-        if(info[i].media_type == "tv"){
-            /* resultados.innerHTML += `<li>Serie: ${info[i].original_name}</li>` */
-            let resultados = document.querySelector(".resultados")
-            resultados.innerHTML += `<li>
-                                        <a href="detalle/movieDetail.html?id=${info[i].id}&media_type=${info[i].media_type}">
-                                            <img class= "img-resultado" src="https://image.tmdb.org/t/p/w500${info[i].poster_path}" alt="">
-                                         </a>
-                                    </li>`}
-         else if (info[i].media_type == "movie"){
-            /* resultados.innerHTML += `<li>Pelicula: ${info[i].title}</li>` */
-            let resultados = document.querySelector(".resultados")
-            resultados.innerHTML += `<li>
-                                        <a href="detalle/movieDetail.html?id=${info[i].id}&media_type=${info[i].media_type}">
-                                            <img class="img-resultado" src="https://image.tmdb.org/t/p/w500${info[i].poster_path}" alt="">
-                                        </a>
-                                    </li>`
+                        resultados.innerHTML += `<li>
+                                         <a href="detalle/movieDetail.html?id=${info[i].id}&media_type=${info[i].media_type}">
+                                         <img class= "img-resultado" src="https://image.tmdb.org/t/p/w500${info[i].poster_path}" alt="">
+                                                                </a>
+                                        </li>`
+                    }
+        
+                })
+                .catch(function (error) {
+                    console.log(error);
+                })
         }
         
-    }}
-    else{
-        let alertas = document.querySelector('h2');
-        alertas.innerText = "There are no results for: " + search
-    }
-    
-    
-   
-    
+        if(mediaType == "person"){
+            //Completar
+            let url = `https://api.themoviedb.org/3/search/person?api_key=${apiKey}&language=en-US&query=${search}&page=1&include_adult=false` //Viene de la API de TMDB
         
-    
+            fetch(url)
+                .then(function (respuestas) {
+                    return respuestas.json()
+                })
+                .then(function (data) {
+                    //Aca operamos con los datos.
+                    console.log(data);
+        
+                    let info = data.results //Esto es un array.
+                    let resultados = document.querySelector('.resultados');
+                    
+        
+                    for (let i = 0; i < info.length; i++) {
+                       resultados.innerHTML += `<li>
+                                         <a href="detalle/movieDetail.html?id=${info[i].id}&media_type=${info[i].media_type}">
+                                         <img class= "img-resultado" src="https://image.tmdb.org/t/p/w500${info[i].profile_path}" alt="">
+                                                                </a>
+                                        </li>`
+                    }
+        
+                })
+                .catch(function (error) {
+                    console.log(error);
+                })
 
 
-})
-.catch(error => console.log(error))
+ }
+        
+        if(mediaType == "all"){
+            //fetch a multisearch
+        
+            let url = ` https://api.themoviedb.org/3/search/multi?api_key=${apiKey}&language=en-US&query=${search}&page=1&include_adult=false` //Viene de la API de TMDB
+        
+            fetch(url)
+                .then(function (respuestas) {
+                    return respuestas.json()
+                })
+                .then(function (data) {
+                    //Aca operamos con los datos.
+                    console.log(data);
+        
+                    let info = data.results //Esto es un array.
+                    let resultados = document.querySelector('.resultados');
+                   
+        
+                    for (let i = 0; i < info.length; i++) {
+                        if(info[i].media_type == "movie"){
+                            resultados.innerHTML += `<li>
+                            <a href="detalle/movieDetail.html?id=${info[i].id}&media_type=${info[i].media_type}">
+                                <img class="img-resultado" src="https://image.tmdb.org/t/p/w500${info[i].poster_path}" alt="">
+                            </a>
+                        </li>`
+
+                        } else if (info[i].media_type == "tv"){
+                            resultados.innerHTML += `<li>
+                            <a href="detalle/movieDetail.html?id=${info[i].id}&media_type=${info[i].media_type}">
+                            <img class= "img-resultado" src="https://image.tmdb.org/t/p/w500${info[i].poster_path}" alt="">
+                                                   </a>
+                           </li>`
+                        } else {
+                            resultados.innerHTML += `<li>
+                            <a href="detalle/movieDetail.html?id=${info[i].id}&media_type=${info[i].media_type}">
+                            <img class= "img-resultado" src="https://image.tmdb.org/t/p/w500${info[i].profile_path}" alt="">
+                                                   </a>
+                           </li>`
+                        }
+                    }
+        
+                })
+                .catch(function (error) {
+                    console.log(error);
+                })
+                 }
