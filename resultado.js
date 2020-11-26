@@ -10,6 +10,26 @@ let url = `https://api.themoviedb.org/3/search/multi?api_key=3801289076602860794
 
 let resultados = document.querySelector('.resultados')
 
+
+fetch(url)
+.then(datos=>datos.json() )
+.then(respuesta=> {
+    let spinner = document.querySelector ('.loader')
+    spinner.getElementsByClassName.display = "none"
+    console.log (respuesta) ;
+    let results = ''
+   
+    
+  })
+
+
+
+
+
+
+
+
+
 fetch(url)
 .then(function (respuestas){
     return respuestas.json()
@@ -42,7 +62,13 @@ fetch(url)
         let alertas = document.querySelector('h2');
         alertas.innerText = "There are no results for: " + search
     }
-
     
+    
+   
+    
+        
+    
+
+
 })
 .catch(error => console.log(error))
