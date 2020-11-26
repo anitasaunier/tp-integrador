@@ -2,336 +2,335 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="../stylesh.css">
     <link rel="stylesheet" href="css/uikit.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.4.6/dist/css/uikit.min.css">
     <title>Gendres</title>
 </head>
 <body>
-<header>
+
 <!-- Simulate a smartphone / tablet -->
-<div class="mobile-container">
-        
-    <!-- Top Navigation Menu -->
-    <div class="topnav">
-            <a href="" class="active">Menu</a>
-        <div id="myLinks">
-            <a href="../home/index.html">Home</a>
-            <a href="../generos/genres.html">Genders</a>
-            <a href="../Register-login/registrarse.html">Register</a>
-            <a href="../Register-login/logIn.html">Log in</a>
-            <a href="../favoritos.html">Favorites</a>
+<div class="contenedor">
+    <header>
+        <div class="mobile-container">
+                
+            <!-- Top Navigation Menu -->
+            <div class="topnav">
+                    <a href="" class="active">Menu</a>
+                <div id="myLinks">
+                    <a href="../home/index.html">Home</a>
+                    <a href="../generos/genres.html">Genders</a>
+                    <a href=>Register</a>
+                    <a href=>Log in</a>
+                    <a href="../favoritos.html">Favorites</a>
+                </div>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+                    </a>
+            </div>
         </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-            </a>
-    </div>
+            <img  class="logo" width="200px" height="100%" src="LogoSample_ByTailorBrands (2) copy.jpg" alt="Logo">
+            <script>
+                function myFunction() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                x.style.display = "none";
+                } else {
+                x.style.display = "block";
+                x.style.position = "absolute";
+                }
+                }
+            </script>  
+        </header>
+         <!-- buscador -->
+         <div class="buscador">
+            <form action="../resultado.html" method="GET">
+                <input type="search" value="" name="search" placeholder="Search">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+        
+        
+        
+        
+        
+        <div class="separadores"><h2>Géneros</h2></div>
+        <div class="separadores"><h2 class="titulo">Action</h2></div>
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+        
+            <ul class="lista-action uk-slider-items  ">
+                <div class="uk-position-center uk-panel"></div>
+            </ul>
+           
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        
+        
+          
+        </div>
+        <div class="separadores"><h2 class="titulo">Adventure</h2></div>
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+        
+            <ul class="lista-adventure uk-slider-items  ">
+                <div class="uk-position-center uk-panel"></div>
+            </ul>
+           
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        
+        
+          
+        </div>
+        <div class="separadores"><h2 class="titulo">Animation</h2></div>
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+        
+            <ul class="lista-animation uk-slider-items  ">
+                <div class="uk-position-center uk-panel"></div>
+            </ul>
+           
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        
+        
+          
+        </div>
+        <div class="separadores"><h2 class="titulo">Comedy</h2></div>
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+        
+            <ul class="lista-comedy uk-slider-items  ">
+                <div class="uk-position-center uk-panel"></div>
+            </ul>
+           
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        
+        
+          
+        </div>
+        <div class="separadores"><h2 class="titulo">Crime</h2></div>
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+        
+            <ul class="lista-crime uk-slider-items  ">
+                <div class="uk-position-center uk-panel"></div>
+            </ul>
+           
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        
+        
+          
+        </div>
+        <div class="separadores"><h2 class="titulo">Documentary</h2></div>
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+        
+            <ul class="lista-documentary uk-slider-items  ">
+                <div class="uk-position-center uk-panel"></div>
+            </ul>
+           
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        
+        
+          
+        </div>
+        <div class="separadores"><h2 class="titulo">Drama</h2></div>
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+        
+            <ul class="lista-drama uk-slider-items  ">
+                <div class="uk-position-center uk-panel"></div>
+            </ul>
+           
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        
+        
+          
+        </div>
+        <div class="separadores"><h2 class="titulo">Family</h2></div>
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+        
+            <ul class="lista-family uk-slider-items  ">
+                <div class="uk-position-center uk-panel"></div>
+            </ul>
+           
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        
+        
+          
+        </div>
+        <div class="separadores"><h2 class="titulo">Fantasy</h2></div>
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+        
+            <ul class="lista-fantasy uk-slider-items  ">
+                <div class="uk-position-center uk-panel"></div>
+            </ul>
+           
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        
+        
+          
+        </div>
+        <div class="separadores"><h2 class="titulo">History</h2></div>
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+        
+            <ul class="lista-history uk-slider-items  ">
+                <div class="uk-position-center uk-panel"></div>
+            </ul>
+           
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        
+        
+          
+        </div>
+        <div class="separadores"><h2 class="titulo">Horror</h2></div>
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+        
+            <ul class="lista-horror uk-slider-items  ">
+                <div class="uk-position-center uk-panel"></div>
+            </ul>
+           
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        
+        
+          
+        </div>
+        <div class="separadores"><h2 class="titulo">Music</h2></div>
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+        
+            <ul class="lista-music uk-slider-items  ">
+                <div class="uk-position-center uk-panel"></div>
+            </ul>
+           
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        
+        
+          
+        </div>
+        <div class="separadores"><h2 class="titulo">Mystery</h2></div>
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+        
+            <ul class="lista-mystery uk-slider-items  ">
+                <div class="uk-position-center uk-panel"></div>
+            </ul>
+           
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        
+        
+          
+        </div>
+        <div class="separadores"><h2 class="titulo">Romance</h2></div>
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+        
+            <ul class="lista-romance uk-slider-items  ">
+                <div class="uk-position-center uk-panel"></div>
+            </ul>
+           
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        
+        
+          
+        </div>
+        <div class="separadores"><h2 class="titulo">Sciene Fiction</h2></div>
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+        
+            <ul class="lista-science-fiction uk-slider-items  ">
+                <div class="uk-position-center uk-panel"></div>
+            </ul>
+           
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        
+        
+          
+        </div>
+        <div class="separadores"><h2 class="titulo">TV Movie</h2></div>
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+        
+            <ul class="lista-tv-movie uk-slider-items  ">
+                <div class="uk-position-center uk-panel"></div>
+            </ul>
+           
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        
+        
+          
+        </div>
+        <div class="separadores"><h2 class="titulo">Thriller</h2></div>
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+        
+            <ul class="lista-thriller uk-slider-items  ">
+                <div class="uk-position-center uk-panel"></div>
+            </ul>
+           
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        
+        
+          
+        </div>
+        <div class="separadores"><h2 class="titulo">War</h2></div>
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+        
+            <ul class="lista-war uk-slider-items  ">
+                <div class="uk-position-center uk-panel"></div>
+            </ul>
+           
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        
+        
+          
+        </div>
+        <div class="separadores"><h2 class="titulo">Western</h2></div>
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+        
+            <ul class="lista-western uk-slider-items  ">
+                <div class="uk-position-center uk-panel"></div>
+            </ul>
+           
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        
+        
+          
+        </div>
+        
+        <section class="dgeneros">
+         
+        
+        <footer class="footer">
+            <div>
+                <a href="../home/index.html"><img width="160px" height="100px" src="LogoSample_ByTailorBrands (2) copy.jpg" alt="Logo"></a>    
+            </div>
+            <div>
+                <ul type=none class="listasfinal">
+                    <li>Movietime Corporation</li>
+                    <li>Digital House: copyright agent</li>
+                    <li> <a href="https://www.digitalhouse.com/ar/?gclid=EAIaIQobChMI7IqkhKH66wIVDRGRCh3gZA7MEAAYASAAEgKnBfD_BwE"> Join Digital House</a></li>
+                </ul> 
+            </div>   
+            <div>
+                <ul type=none class="nombres">
+                    <li><a href=" https://www.instagram.com/anitasaunier/"> Ana Saunier </a></li>
+                    <li> <a href="https://www.instagram.com/francomurina/"> Franco Murina </a></li>
+                    <li><a href="https://www.instagram.com/yoel_park/"> Yoel Ernesto Park </a></li>
+                </ul>  
+            </div> 
+            <div>
+                  <img width="160px" height="110px" src="img/logo-movie-removebg-preview.png" class="logo-movie" alt="movie">
+            </div>
+        </footer>
 </div>
-    <img  class="logo" width="200px" height="100%" src="LogoSample_ByTailorBrands (2) copy.jpg" alt="Logo">
-    <script>
-        function myFunction() {
-        var x = document.getElementById("myLinks");
-        if (x.style.display === "block") {
-        x.style.display = "none";
-        } else {
-        x.style.display = "block";
-        x.style.position = "absolute";
-        }
-        }
-    </script>  
-</header>
- <!-- buscador -->
- <div class="buscador">
-    <form action="../resultado.html" method="GET">
-        <input type="search" value="" name="search" placeholder="Search">
-        <button type="submit"><i class="fas fa-search"></i></button>
-    </form>
-</div>
 
-
-
-
-
-<div class="separadores"><h2>Géneros</h2></div>
-<div class="separadores"><h2 class="titulo">Action</h2></div>
-<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
-
-    <ul class="lista-action uk-slider-items  ">
-        <div class="uk-position-center uk-panel"></div>
-    </ul>
-   
-    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-
-
-  
-</div>
-<div class="separadores"><h2 class="titulo">Adventure</h2></div>
-<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
-
-    <ul class="lista-adventure uk-slider-items  ">
-        <div class="uk-position-center uk-panel"></div>
-    </ul>
-   
-    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-
-
-  
-</div>
-<div class="separadores"><h2 class="titulo">Animation</h2></div>
-<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
-
-    <ul class="lista-animation uk-slider-items  ">
-        <div class="uk-position-center uk-panel"></div>
-    </ul>
-   
-    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-
-
-  
-</div>
-<div class="separadores"><h2 class="titulo">Comedy</h2></div>
-<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
-
-    <ul class="lista-comedy uk-slider-items  ">
-        <div class="uk-position-center uk-panel"></div>
-    </ul>
-   
-    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-
-
-  
-</div>
-<div class="separadores"><h2 class="titulo">Crime</h2></div>
-<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
-
-    <ul class="lista-crime uk-slider-items  ">
-        <div class="uk-position-center uk-panel"></div>
-    </ul>
-   
-    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-
-
-  
-</div>
-<div class="separadores"><h2 class="titulo">Documentary</h2></div>
-<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
-
-    <ul class="lista-documentary uk-slider-items  ">
-        <div class="uk-position-center uk-panel"></div>
-    </ul>
-   
-    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-
-
-  
-</div>
-<div class="separadores"><h2 class="titulo">Drama</h2></div>
-<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
-
-    <ul class="lista-drama uk-slider-items  ">
-        <div class="uk-position-center uk-panel"></div>
-    </ul>
-   
-    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-
-
-  
-</div>
-<div class="separadores"><h2 class="titulo">Family</h2></div>
-<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
-
-    <ul class="lista-family uk-slider-items  ">
-        <div class="uk-position-center uk-panel"></div>
-    </ul>
-   
-    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-
-
-  
-</div>
-<div class="separadores"><h2 class="titulo">Fantasy</h2></div>
-<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
-
-    <ul class="lista-fantasy uk-slider-items  ">
-        <div class="uk-position-center uk-panel"></div>
-    </ul>
-   
-    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-
-
-  
-</div>
-<div class="separadores"><h2 class="titulo">History</h2></div>
-<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
-
-    <ul class="lista-history uk-slider-items  ">
-        <div class="uk-position-center uk-panel"></div>
-    </ul>
-   
-    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-
-
-  
-</div>
-<div class="separadores"><h2 class="titulo">Horror</h2></div>
-<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
-
-    <ul class="lista-horror uk-slider-items  ">
-        <div class="uk-position-center uk-panel"></div>
-    </ul>
-   
-    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-
-
-  
-</div>
-<div class="separadores"><h2 class="titulo">Music</h2></div>
-<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
-
-    <ul class="lista-music uk-slider-items  ">
-        <div class="uk-position-center uk-panel"></div>
-    </ul>
-   
-    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-
-
-  
-</div>
-<div class="separadores"><h2 class="titulo">Mystery</h2></div>
-<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
-
-    <ul class="lista-mystery uk-slider-items  ">
-        <div class="uk-position-center uk-panel"></div>
-    </ul>
-   
-    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-
-
-  
-</div>
-<div class="separadores"><h2 class="titulo">Romance</h2></div>
-<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
-
-    <ul class="lista-romance uk-slider-items  ">
-        <div class="uk-position-center uk-panel"></div>
-    </ul>
-   
-    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-
-
-  
-</div>
-<div class="separadores"><h2 class="titulo">Sciene Fiction</h2></div>
-<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
-
-    <ul class="lista-science-fiction uk-slider-items  ">
-        <div class="uk-position-center uk-panel"></div>
-    </ul>
-   
-    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-
-
-  
-</div>
-<div class="separadores"><h2 class="titulo">TV Movie</h2></div>
-<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
-
-    <ul class="lista-tv-movie uk-slider-items  ">
-        <div class="uk-position-center uk-panel"></div>
-    </ul>
-   
-    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-
-
-  
-</div>
-<div class="separadores"><h2 class="titulo">Thriller</h2></div>
-<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
-
-    <ul class="lista-thriller uk-slider-items  ">
-        <div class="uk-position-center uk-panel"></div>
-    </ul>
-   
-    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-
-
-  
-</div>
-<div class="separadores"><h2 class="titulo">War</h2></div>
-<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
-
-    <ul class="lista-war uk-slider-items  ">
-        <div class="uk-position-center uk-panel"></div>
-    </ul>
-   
-    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-
-
-  
-</div>
-<div class="separadores"><h2 class="titulo">Western</h2></div>
-<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
-
-    <ul class="lista-western uk-slider-items  ">
-        <div class="uk-position-center uk-panel"></div>
-    </ul>
-   
-    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-
-
-  
-</div>
-
-<section class="dgeneros">
- 
-
-<footer class="footer">
-    <div>
-        <a href="../home/index.html"><img width="160px" height="100px" src="LogoSample_ByTailorBrands (2) copy.jpg" alt="Logo"></a>    
-    </div>
-    <div>
-        <ul type=none class="listasfinal">
-            <li>Movietime Corporation</li>
-            <li>Digital House: copyright agent</li>
-            <li> <a href="https://www.digitalhouse.com/ar/?gclid=EAIaIQobChMI7IqkhKH66wIVDRGRCh3gZA7MEAAYASAAEgKnBfD_BwE"> Join Digital House</a></li>
-        </ul> 
-    </div>   
-    <div>
-        <ul type=none class="nombres">
-            <li><a href=" https://www.instagram.com/anitasaunier/"> Ana Saunier </a></li>
-            <li> <a href="https://www.instagram.com/francomurina/"> Franco Murina </a></li>
-            <li><a href="https://www.instagram.com/yoel_park/"> Yoel Ernesto Park </a></li>
-        </ul>  
-    </div> 
-    <div class="social-links">
-        <a href="https://es-la.facebook.com/"> <img width="35%" src= "img/logo_facebook-removebg-preview (1).png" alt="facebook"></a>
-        <a href="https://www.instagram.com/"> <img width="20%" src="img/logo_instagram-removebg-preview (1).png" alt="instagram"></a>
-        <a href="https://twitter.com/?lang=es"> <img width="20%" src="img/logo_twitter-removebg-preview.png" alt="logo twitter"></a>
-    </div>
-    <div>
-          <img width="160px" height="110px" src="img/logo-movie-removebg-preview.png" class="logo-movie" alt="movie">
-    </div>
-</footer>
 
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.6/dist/js/uikit.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.6/dist/js/uikit-icons.min.js"></script>
