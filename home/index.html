@@ -10,123 +10,123 @@
     <title>Home</title>
 </head>
 <body>
-<header>
+
 <!-- Simulate a smartphone / tablet -->
-<div class="mobile-container">
+<div class="contenedor">
+    <header>
+    <div class="mobile-container">
 
-    <!-- Top Navigation Menu -->
-    <div class="topnav">
-            <a href="" class="active">Menu</a>
-        <div id="myLinks">
-            <a href="../home/index.html">Home</a>
-            <a href="../generos/genres.html">Genders</a>
-            <a href="../Register-login/registrarse.html">Register</a>
-            <a href="../Register-login/logIn.html">Log in</a>
-            <a href="../favoritos.html">Favorites</a>
+        <!-- Top Navigation Menu -->
+        <div class="topnav"> 
+                <a href="" class="active">Menu</a>
+            <div id="myLinks">
+                <a href="../home/index.html">Home</a>
+                <a href="../generos/genres.html">Genders</a>
+                <a href=>Register</a>
+                <a href=>Log in</a>
+                <a href="../favoritos.html">Favorites</a>
+            </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+                </a>
         </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-            </a>
     </div>
-</div>
-    <img  class="logo" width="200px" height="100%" src="img/LogoSample_ByTailorBrands (2).jpg" alt="Logo">
-    
-    <script>
-    function myFunction() {
-        var x = document.getElementById("myLinks");
-        if (x.style.display === "block") {
-        x.style.display = "none";
-        } else {
-        x.style.display = "block";
-        x.style.position = "absolute";
+        <img  class="logo" width="200px" height="100%" src="img/LogoSample_ByTailorBrands (2).jpg" alt="Logo">
+        
+        <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+            x.style.display = "none";
+            } else {
+            x.style.display = "block";
+            x.style.position = "absolute";
+            }
         }
-    }
-    </script>  
-
-</header>
-
- <!-- buscador -->
- 
- <div class="buscador">
-    <form action="../resultado.html" method="GET">
-        <input type="search" value="" name="search" placeholder="Search">
-        <button type="submit"><i class="fas fa-search"></i></button>
-    </form>
+        </script>  
+    
+    </header>
+    
+     <!-- buscador -->
+     
+    <div class="buscador">
+        <form action="../resultado.html" method="GET">
+            <input type="search" value="" name="search" placeholder="Search">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+    </div>
+    
+    
+    
+    <main class="banner">
+        <img class="img-banner" height="100%" src="img/banner-ver-peliculas-cine-linea-casa-ilustracion-vectorial-movil-concepto-estilo-plano-diseno-tira-pelicula_94753-2.jpg" alt="banner" >  
+    </main>
+    
+        <!-- carrousel -->
+        
+        <!-- All -->
+    <div class="separadores"><h2 class="titulo">Movies & TV</h2></div>
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+            <ul class="lista-todas uk-slider-items  ">
+                <div class="uk-position-center uk-panel"></div>
+            </ul>
+           
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+         
+        </div>
+         
+        <!-- Movies -->
+    <div class="separadores"><h2 class="titulo">Movies</h2></div>
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+            <ul class=" lista-peliculas uk-slider-items ">
+                <div class="uk-position-center uk-panel"></div>
+            </ul>
+    
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                  
+        </div>
+    
+        <!-- TV -->
+    <div class="separadores"> <h2 class="titulo">TV</h2></div>  
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+            <ul class=" lista-series uk-slider-items ">
+                <div class="uk-position-center uk-panel"></div>
+            </ul>
+    
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+    
+        </div>
+           
+    
+    
+    <footer class="footer">
+        <div>
+            <a href="../home/index.html"><img width="160px" height="100px" src="img/LogoSample_ByTailorBrands (2).jpg" alt="Logo"></a>    
+        </div>
+        <div>
+            <ul type=none class="listasfinal">
+                <li>Movietime Corporation</li>
+                <li>Digital House: copyright agent</li>
+                <li> <a href="https://www.digitalhouse.com/ar/?gclid=EAIaIQobChMI7IqkhKH66wIVDRGRCh3gZA7MEAAYASAAEgKnBfD_BwE"> Join Digital House</a></li>
+            </ul> 
+        </div>   
+        <div>
+            <ul type=none class="nombres">
+                <li><a href=" https://www.instagram.com/anitasaunier/"> Ana Saunier </a></li>
+                <li> <a href="https://www.instagram.com/francomurina/"> Franco Murina </a></li>
+                <li><a href="https://www.instagram.com/yoel_park/"> Yoel Ernesto Park </a></li>
+            </ul>  
+        </div>  
+      
+        <div>   
+            <img width="160px" height="100px" src="img/logo-movie-removebg-preview.png" class="logo-movie" alt="movie">
+        </div>
+    </footer> 
 </div>
 
-
-
-<main class="banner">
-    <img class="img-banner" height="100%" src="img/banner-ver-peliculas-cine-linea-casa-ilustracion-vectorial-movil-concepto-estilo-plano-diseno-tira-pelicula_94753-2.jpg" alt="banner" >  
-</main>
-
-    <!-- carrousel -->
-    
-    <!-- All -->
-<div class="separadores"><h2 class="titulo">Movies & TV</h2></div>
-    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
-        <ul class="lista-todas uk-slider-items  ">
-            <div class="uk-position-center uk-panel"></div>
-        </ul>
-       
-        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-     
-    </div>
-     
-    <!-- Movies -->
-<div class="separadores"><h2 class="titulo">Movies</h2></div>
-    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
-        <ul class=" lista-peliculas uk-slider-items ">
-            <div class="uk-position-center uk-panel"></div>
-        </ul>
-
-        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-              
-    </div>
-
-    <!-- TV -->
-<div class="separadores"> <h2 class="titulo">TV</h2></div>  
-    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
-        <ul class=" lista-series uk-slider-items ">
-            <div class="uk-position-center uk-panel"></div>
-        </ul>
-
-        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-
-    </div>
-       
-
-
-<footer class="footer">
-    <div>
-        <a href="../home/index.html"><img width="160px" height="100px" src="img/LogoSample_ByTailorBrands (2).jpg" alt="Logo"></a>    
-    </div>
-    <div>
-        <ul type=none class="listasfinal">
-            <li>Movietime Corporation</li>
-            <li>Digital House: copyright agent</li>
-            <li> <a href="https://www.digitalhouse.com/ar/?gclid=EAIaIQobChMI7IqkhKH66wIVDRGRCh3gZA7MEAAYASAAEgKnBfD_BwE"> Join Digital House</a></li>
-        </ul> 
-    </div>   
-    <div>
-        <ul type=none class="nombres">
-            <li><a href=" https://www.instagram.com/anitasaunier/"> Ana Saunier </a></li>
-            <li> <a href="https://www.instagram.com/francomurina/"> Franco Murina </a></li>
-            <li><a href="https://www.instagram.com/yoel_park/"> Yoel Ernesto Park </a></li>
-        </ul>  
-    </div>  
-    <div class="social-links">
-        <a href="https://es-la.facebook.com/"> <img width="35%" src= "img/logo_facebook-removebg-preview (1).png" alt="facebook"></a>
-        <a href="https://www.instagram.com/"> <img width="20%" src="img/logo_instagram-removebg-preview (1).png" alt="instagram"></a>
-        <a href="https://twitter.com/?lang=es"> <img width="20%" src="img/logo_twitter-removebg-preview.png" alt="logo twitter"></a>
-    </div>    
-    <div>   
-        <img width="160px" height="100px" src="img/logo-movie-removebg-preview.png" class="logo-movie" alt="movie">
-    </div>
-</footer> 
 
 <script src="https://kit.fontawesome.com/de318a52d9.js" crossorigin="anonymous"></script>
 <script src="js/script.js"></script>
