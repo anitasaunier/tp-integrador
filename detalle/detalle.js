@@ -109,8 +109,10 @@ if (mediaType == "movie"){
                 })
             }
             localStorage.setItem('favoritos',JSON.stringify(storageJs))
+
             
         })
+<<<<<<< HEAD
 fetch(`https://api.themoviedb.org/3/movie/${id}/reviews?api_key=3801289076602860794bddb717c8f4f5&language=en-US&page=1`)
 .then(function(respuestas){
     return respuestas.json()
@@ -135,6 +137,9 @@ fetch(`https://api.themoviedb.org/3/movie/${id}/reviews?api_key=3801289076602860
     
 
 })
+=======
+         })
+>>>>>>> e38806414c153a2e580a2fa06853bc82f5cee28f
     
         .catch(function(error){    
             console.log(error);

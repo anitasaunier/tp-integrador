@@ -29,7 +29,7 @@ storageJs.forEach( id =>{
 storageJs.forEach( id =>{
 fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=3801289076602860794bddb717c8f4f5&language=en-US`)
     
-    
+         
 .then(datos => datos.json())
 .then(respuesta=>{
     console.log(respuesta);
