@@ -7,8 +7,8 @@ let queryString = window.location.search;
 let queryObject = new URLSearchParams(queryString);
 
 //3 Obtener EL dato para completar el end point.
-let search = queryObject.get('search'); //Cambie segun lo que tengo en la url
-let mediaType = queryObject.get('mediaType'); //Cambie segun lo que tengo en la url
+let search = queryObject.get('search'); 
+let mediaType = queryObject.get('mediaType'); 
 
 
 let apiKey = "3801289076602860794bddb717c8f4f5"
@@ -29,14 +29,13 @@ if(mediaType == "movie"){
             let info = data.results //Esto es un array.
             let resultados = document.querySelector('.resultados');
            
-
-            for (let i = 0; i < info.length; i++) {
+            for (let i=0; i < info.length; i++) {
              
-                               resultados.innerHTML += `<li>
-                                                            <a href="detalle/movieDetail.html?id=${info[i].id}&media_type=${info[i].media_type}">
-                                                                <img class="img-resultado" src="https://image.tmdb.org/t/p/w500${info[i].poster_path}" alt="This image is not available">
-                                                            </a>
-                                                        </li>`
+            resultados.innerHTML += `<li>
+                                        <a href="detalle/movieDetail.html?id=${info[i].id}&media_type=${info[i].media_type}">
+                                            <img class="img-resultado" src="https://image.tmdb.org/t/p/w500${info[i].poster_path}" alt="This image is not available">
+                                        </a>
+                                    </li>`
                             
           }
 
@@ -110,7 +109,7 @@ if(mediaType == "person"){
 
  }
         
-        if(mediaType == "all"){
+if(mediaType == "all"){
             //fetch a multisearch
         
             let url = ` https://api.themoviedb.org/3/search/multi?api_key=${apiKey}&language=en-US&query=${search}&page=1&include_adult=false` //Viene de la API de TMDB
