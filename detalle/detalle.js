@@ -1,11 +1,10 @@
 // obtiene la query string
-let queryString = location.search;
+let queryString = window.location.search;
 // // la transformo en un objeto literal
 let queryObject = new URLSearchParams(queryString);
 
 // capturo el dato para el endpoint de la url
 let id = queryObject.get('id');
-
 let mediaType = queryObject.get('media_type')
 
 let url = `https://api.themoviedb.org/3/${mediaType}/${id}?api_key=3801289076602860794bddb717c8f4f5&language=en-US`
