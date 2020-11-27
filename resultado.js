@@ -136,13 +136,13 @@ if(mediaType == "all"){
                         } else if (info[i].media_type == "tv"){
                             resultados.innerHTML += `<li>
                             <a href="detalle/movieDetail.html?id=${info[i].id}&media_type=${info[i].media_type}">
-                            <img class= "img-resultado" src="https://image.tmdb.org/t/p/w500${info[i].poster_path}" alt="">
+                            <img class= "img-resultado" src="https://image.tmdb.org/t/p/w500${info[i].poster_path}" alt="This image is not available">
                                                    </a>
                            </li>`
                         } else {
                             resultados.innerHTML += `<li>
                             <a href="detalle/movieDetail.html?id=${info[i].id}&media_type=${info[i].media_type}">
-                            <img class= "img-resultado" src="https://image.tmdb.org/t/p/w500${info[i].profile_path}" alt="">
+                            <img class= "img-resultado" src="https://image.tmdb.org/t/p/w500${info[i].profile_path}" alt="This image is not available">
                                                    </a>
                            </li>`
                         }
