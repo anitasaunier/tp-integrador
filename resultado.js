@@ -1,12 +1,11 @@
 
 
-//1 Obtener la queryString
+
 let queryString = window.location.search;
 
-//2 Transformarla en un obejto literal
 let queryObject = new URLSearchParams(queryString);
 
-//3 Obtener EL dato para completar el end point.
+
 let search = queryObject.get('search'); 
 let mediaType = queryObject.get('mediaType'); 
 
