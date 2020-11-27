@@ -264,7 +264,11 @@ else if (mediaType == "tv"){
         storage = localStorage.getItem('favoritos')
         
         let storageJs = JSON.parse(storage)
-
+        if (!storageJs.some(contenido => contenido.id == id)) {
+            button.innerText = "Add to favorites"
+        }else{
+            button.innerText = "Remove from favorites"
+        }
         button.addEventListener('click', function(event){
             button.innerText = "Remove from favorites"
             if (!storageJs.some(contenido => contenido.id == id)){
@@ -273,15 +277,21 @@ else if (mediaType == "tv"){
                 button.innerText = "Remove from favorites"
             }else{
                 storageJs = storageJs.filter
-                (function(movie){
-                    return movie.id != id
+                (function(tv){
+                    return tv.id != id
                 })
                 button.innerText = "Add to favorites"
             }
             localStorage.setItem('favoritos',JSON.stringify(storageJs))
         })
 
-        
+            
+                
+           
+                
+                
+                   
+                    
            
      
 
