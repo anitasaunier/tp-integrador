@@ -48,43 +48,42 @@ if(mediaType == "movie"){
 
 
 
-        if(mediaType == "tv"){
-
-            let url = `https://api.themoviedb.org/3/search/tv?api_key=${apiKey}&language=en-US&query=${search}&page=1&include_adult=false` //Viene de la API de TMDB
+if(mediaType == "tv"){
+    
+    let url = `https://api.themoviedb.org/3/search/tv?api_key=${apiKey}&language=en-US&query=${search}&page=1&include_adult=false` //Viene de la API de TMDB
         
-            fetch(url)
-                .then(function (respuestas) {
-                    return respuestas.json()
-                })
-                .then(function (data) {
-                    //Aca operamos con los datos.
-                    console.log(data);
+    fetch(url)
+        .then(function (respuestas) {
+            return respuestas.json()
+        })
+        .then(function (data) {
+        //Aca operamos con los datos.
+        console.log(data);
         
-                    let info = data.results //Esto es un array.
-                    console.log(info)
-                    let resultados = document.querySelector('.resultados');
+            let info = data.results //Esto es un array.
+                console.log(info)
+            let resultados = document.querySelector('.resultados');
                     
-                    for (let i = 0; i < info.length; i++) {
-
-                        resultados.innerHTML += `<li>
+            for (let i = 0; i < info.length; i++) {
+                resultados.innerHTML += `<li>
                                          <a href="detalle/movieDetail.html?id=${info[i].id}&media_type=${info[i].media_type}">
                                          <img class= "img-resultado" src="https://image.tmdb.org/t/p/w500${info[i].poster_path}" alt="">
                                                                 </a>
                                         </li>`
-                    }
+                }
         
                 })
-                .catch(function (error) {
-                    console.log(error);
-                })
+            .catch(function (error) {
+                console.log(error);
+            })
         }
         
-        if(mediaType == "person"){
+if(mediaType == "person"){
             //Completar
-            let url = `https://api.themoviedb.org/3/search/person?api_key=${apiKey}&language=en-US&query=${search}&page=1&include_adult=false` //Viene de la API de TMDB
+    let url = `https://api.themoviedb.org/3/search/person?api_key=${apiKey}&language=en-US&query=${search}&page=1&include_adult=false` //Viene de la API de TMDB
         
-            fetch(url)
-                .then(function (respuestas) {
+    fetch(url)
+        .then(function (respuestas) {
                     return respuestas.json()
                 })
                 .then(function (data) {
