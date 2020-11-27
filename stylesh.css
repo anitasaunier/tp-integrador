@@ -374,7 +374,9 @@ footer{
     align-items: center;
     justify-content: space-between;    
 }
-
+.digital{
+    color: white;
+  }
 /* Responsive design */
 
 @media screen and (min-width:420px){
