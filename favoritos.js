@@ -9,10 +9,18 @@ let favoritos = document.querySelector('.fav')
 
 let storageJs = JSON.parse(storage)
 let movies = ''
-
-storageJs.forEach( id =>{
+storageJs.forEach(function(contenido){
+    if (contenido.mediaType == 'tv'){
+        imprimirSerie(contenido.id)
+    }else{
+        console.log(contenido)
+        imprimirPelicula(contenido.id)
+        
+    }
+} )
+function imprimirSerie(id){ 
+console.log(id)
     fetch(`https://api.themoviedb.org/3/tv/${id}?api_key=3801289076602860794bddb717c8f4f5&language=en-US`)
-    
     
     .then(datos => datos.json())
     .then(respuesta=>{
@@ -24,12 +32,10 @@ storageJs.forEach( id =>{
     .catch(function(error){    
         console.log(error);
         })
-})
-
-storageJs.forEach( id =>{
+}
+function imprimirPelicula(id){ 
 fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=3801289076602860794bddb717c8f4f5&language=en-US`)
-    
-         
+             
 .then(datos => datos.json())
 .then(respuesta=>{
     console.log(respuesta);
@@ -40,4 +46,5 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=3801289076602860794bddb7
     })
 
 
-})
+
+}

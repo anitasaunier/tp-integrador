@@ -91,27 +91,35 @@ if (mediaType == "movie"){
                 genero.innerHTML += ` <a href="../generos/genres.html#${data.genres[i].name}"> ${data.genres[i].name}. </a> `;
         }} 
 
+    
+
         
 
         //hago lo de favoritos
         let button =document.querySelector('.favorito')
+       
         let storage = localStorage.getItem('favoritos')
-        console.log(storage);
+        
         if (storage===null){
             localStorage.setItem('favoritos', '[]')
         }
+        storage = localStorage.getItem('favoritos')
+        
         let storageJs = JSON.parse(storage)
-        if(storageJs.includes(id)){
+        if (!storageJs.some(contenido => contenido.id == id)) {
+            button.innerText = "Add to favorites"
+        }else{
             button.innerText = "Remove from favorites"
-        } button.addEventListener('click', function(event){
-            
-            if (!storageJs.includes(id)){
-                storageJs.push(id)
+        }
+        button.addEventListener('click', function(event){
+            if (!storageJs.some(contenido => contenido.id == id)){
+                storageJs.push({id, mediaType})
+
                 button.innerText = "Remove from favorites"
             }else{
                 storageJs = storageJs.filter
                 (function(movie){
-                    return movie !=id
+                    return movie.id != id
                 })
                 button.innerText = "Add to favorites"
             }
@@ -249,27 +257,31 @@ else if (mediaType == "tv"){
         //hago lo de favoritos
         let button =document.querySelector('.favorito')
         let storage = localStorage.getItem('favoritos')
-        console.log(storage);
+        
         if (storage===null){
             localStorage.setItem('favoritos', '[]')
         }
+        storage = localStorage.getItem('favoritos')
+        
         let storageJs = JSON.parse(storage)
-        if(storageJs.includes(id)){
+
+        button.addEventListener('click', function(event){
             button.innerText = "Remove from favorites"
-        } button.addEventListener('click', function(event){
-            
-            if (!storageJs.includes(id)){
-                storageJs.push(id)
+            if (!storageJs.some(contenido => contenido.id == id)){
+                storageJs.push({id, mediaType})
+
                 button.innerText = "Remove from favorites"
             }else{
                 storageJs = storageJs.filter
                 (function(movie){
-                    return movie !=id
+                    return movie.id != id
                 })
                 button.innerText = "Add to favorites"
             }
             localStorage.setItem('favoritos',JSON.stringify(storageJs))
         })
+
+        
            
      
 
